@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-type ContainerProps = {};
-type Props = {} & ContainerProps;
+type ContainerProps = Record<string, unknown>;
+type Props = Record<string, unknown> & ContainerProps;
 
 const Component: React.FCX<Props> = ({ className }) => <div className={className}>index page</div>;
 
