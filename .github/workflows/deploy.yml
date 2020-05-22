@@ -29,6 +29,9 @@ jobs:
       - name: Static export
         run: yarn export
 
+      - name: Change url
+        run: git remote set-url origin https://hppRC@github.com/hpprc/hpprc.github.io.git
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
