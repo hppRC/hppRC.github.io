@@ -3,9 +3,9 @@ name: Deploy to master
 on:
   push:
     branches:
-      - develop
+      - source
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
