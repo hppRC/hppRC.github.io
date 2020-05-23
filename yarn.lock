@@ -3170,14 +3170,14 @@ emojis-list@^3.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
 
-emotion-server@^10.0.27:
+emotion-server@10.0.27:
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/emotion-server/-/emotion-server-10.0.27.tgz#ea654342fdf9f5d8cd1793f5a6594159485a3806"
   integrity sha512-ypISBMkgZD7dgP6Y0QhZlqazxffpowcEWlZHKLADVazdxY5iXjZbd1UvovdpfDRjbj4EBxwKkltog3NzuSBavA==
   dependencies:
     create-emotion-server "10.0.27"
 
-emotion-theming@^10.0.27:
+emotion-theming@10.0.27:
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/emotion-theming/-/emotion-theming-10.0.27.tgz#1887baaec15199862c89b1b984b79806f2b9ab10"
   integrity sha512-MlF1yu/gYh8u+sLUqA0YuA9JX0P4Hb69WlKc/9OLo+WCXuX6sy/KoIa+qJimgmr2dWqnypYKYPX37esjDBbhdw==
@@ -3186,7 +3186,7 @@ emotion-theming@^10.0.27:
     "@emotion/weak-memoize" "0.2.5"
     hoist-non-react-statics "^3.3.0"
 
-emotion@^10.0.27:
+emotion@10.0.27:
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/emotion/-/emotion-10.0.27.tgz#f9ca5df98630980a23c819a56262560562e5d75e"
   integrity sha512-2xdDzdWWzue8R8lu4G76uWX5WhyQuzATon9LmNeCy/2BHVC6dsEpfhN1a0qhELgtDVdjyEA6J8Y/VlI5ZnaH0g==
@@ -5321,7 +5321,7 @@ neo-async@2.6.1, neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-next-offline@^5.0.2:
+next-offline@5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-5.0.2.tgz#54078e2626bcd4efeb674f5ac4d0b318e4d51b80"
   integrity sha512-8L2kMhKLSGLfB1k7NgZrAkCDOhFU1z+emT1p9QJb3kkHi+kHI376y+veqe6HwECutNP1b/LFErxDwlBqRSSIEA==
@@ -6632,7 +6632,7 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-recoil@^0.0.7:
+recoil@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.0.7.tgz#197066ac0a983e4728f5973033bbe5b40a277d40"
   integrity sha512-U/0kniHLk131hKhAX35QGdghVf3+PSkLcFIFoNBNy+yv62qCLm3TE5c3v4x4WYzuKgw1fxU3GGhKHAUYdyRnTQ==
@@ -7014,7 +7014,7 @@ sass-loader@8.0.2:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
-sass@^1.26.5:
+sass@1.26.5:
   version "1.26.5"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.5.tgz#2d7aecfbbabfa298567c8f06615b6e24d2d68099"
   integrity sha512-FG2swzaZUiX53YzZSjSakzvGtlds0lcbF+URuU9mxOv7WBh7NhXEVDa4kPKN4hN6fC2TkOTOKqiqp6d53N9X5Q==
@@ -8216,7 +8216,7 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
-unstated-next@^1.1.0:
+unstated-next@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/unstated-next/-/unstated-next-1.1.0.tgz#7bb4911a12fdf3cc8ad3eb11a0b315e4a8685ea8"
   integrity sha512-AAn47ZncPvgBGOvMcn8tSRxsrqwf2VdAPxLASTuLJvZt4rhKfDvUkmYZLGfclImSfTVMv7tF4ynaVxin0JjDCA==
