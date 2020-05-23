@@ -22,9 +22,6 @@
     "assumeChangesOnlyAffectDirectDependencies": true,
 
     "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    },
     "typeRoots": ["src/types", "node_modules/@types"]
   },
   "exclude": ["node_modules", "out", ".next"],
