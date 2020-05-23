@@ -35,3 +35,8 @@ public
 LICENSE
 *.txt
 *.toml
+_next
+.out
+.github
+public
+
