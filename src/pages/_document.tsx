@@ -1,4 +1,8 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+/* eslint-disable react/no-danger */
+/* eslint-disable indent */
+/* eslint-disable prettier/prettier */
+import { extractCritical } from 'emotion-server';
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 
 interface CustomDocumentInterface {
   url: string;
@@ -6,22 +10,34 @@ interface CustomDocumentInterface {
   description: string;
 }
 
-class CustomDocument extends Document implements CustomDocumentInterface {
-  url = `https://next-template.hpprc.com`;
+type DocumentProps = {
+  html: string;
+  ids: string[];
+  css: string;
+  head?: (JSX.Element | null)[] | undefined;
+};
 
-  title = `Next Template`;
+class CustomDocument extends Document<DocumentProps> implements CustomDocumentInterface {
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentProps> {
+    const page = await ctx.renderPage();
+    const styles = extractCritical(page.html);
+    return { ...page, ...styles };
+  }
 
-  description = `Demo of Next.js`;
+  url = `https://hpprc.dev`;
+
+  title = `hpp Profile Page`;
+
+  description = `The proflie pages of hpp. Please contact me if you have any questions.`;
 
   render(): JSX.Element {
     return (
-      <Html lang='ja-JP'>
-        <Head>
+      <Html>
+        <Head lang='en-US'>
           <meta name='charset' content='UTF-8' />
           <meta name='description' content={this.description} />
           <meta name='theme-color' content='#09090f' />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover' key='viewport' />
-
           <meta property='og:type' content='website' />
           <meta property='og:title' content={this.title} />
           <meta property='og:url' content={this.url} />
@@ -33,9 +49,10 @@ class CustomDocument extends Document implements CustomDocumentInterface {
           <meta name='twitter:title' content={this.title} />
           <meta name='twitter:description' content={this.description} />
           <meta name='twitter:image' content={`${this.url}/ogp.png`} />
-
           <link rel='icon' href='/favicon.ico' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+
+          <style data-emotion-css={this.props.ids.join(` `)} dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
         <body>
           <Main />
