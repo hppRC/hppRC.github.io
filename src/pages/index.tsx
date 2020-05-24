@@ -6,7 +6,7 @@ type Props = { toggle: () => void };
 
 const Component: React.FCX<Props> = ({ className, toggle }) => (
   <main className={className}>
-    tt page
+    test
     <button type='button' aria-label='toggle' onClick={toggle} />
   </main>
 );

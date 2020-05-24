@@ -1,8 +1,4 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable indent */
-/* eslint-disable prettier/prettier */
-import { extractCritical } from 'emotion-server';
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 interface CustomDocumentInterface {
   url: string;
@@ -10,20 +6,7 @@ interface CustomDocumentInterface {
   description: string;
 }
 
-type DocumentProps = {
-  html: string;
-  ids: string[];
-  css: string;
-  head?: (JSX.Element | null)[] | undefined;
-};
-
-class CustomDocument extends Document<DocumentProps> implements CustomDocumentInterface {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentProps> {
-    const page = await ctx.renderPage();
-    const styles = extractCritical(page.html);
-    return { ...page, ...styles };
-  }
-
+class CustomDocument extends Document implements CustomDocumentInterface {
   url = `https://hpprc.dev`;
 
   title = `hpp Profile Page`;
@@ -51,8 +34,6 @@ class CustomDocument extends Document<DocumentProps> implements CustomDocumentIn
           <meta name='twitter:image' content={`${this.url}/ogp.png`} />
           <link rel='icon' href='/favicon.ico' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
-
-          <style data-emotion-css={this.props.ids.join(` `)} dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
         <body>
           <Main />
