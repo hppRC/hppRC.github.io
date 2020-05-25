@@ -1,5 +1,6 @@
 import 'sanitize.css';
 import 'src/styles/global.scss';
+import 'src/styles/tailwind.css';
 
 import { AppProps } from 'next/app';
 import React from 'react';
