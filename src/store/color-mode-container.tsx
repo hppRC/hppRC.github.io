@@ -3,22 +3,29 @@ import { ColorMode } from 'src/types';
 import { createContainer } from 'unstated-next';
 
 const Store = () => {
-  const initialMode = useMemo(() => {
+  const initialMode: ColorMode = useMemo(() => {
     if (typeof localStorage !== `undefined`) {
       const stored = localStorage.getItem(`color`);
-      return stored ?? `Light`;
+      // eslint-disable-next-line no-console
+      console.log(stored);
+      return stored ?? `theme-light`;
     }
-    return `Light`;
+    return `theme-light`;
   }, []) as ColorMode;
 
   const [colorMode, setColorMode] = useState<ColorMode>(initialMode);
+  const colorList: ColorMode[] = [`theme-light`, `theme-dark`];
 
   useEffect(() => {
     localStorage.setItem(`color`, colorMode);
   }, [colorMode]);
 
   const toggle = useCallback(() => {
-    setColorMode((mode) => (mode === `Light` ? `Dark` : `Light`));
+    setColorMode((mode) => {
+      const nowIndex = colorList.indexOf(mode);
+      const nextIndex = (nowIndex + 1) % colorList.length;
+      return colorList[nextIndex];
+    });
   }, []);
 
   return { colorMode, toggle, setColorMode };
