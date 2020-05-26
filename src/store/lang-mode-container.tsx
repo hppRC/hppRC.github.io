@@ -12,30 +12,21 @@ const Store = () => {
   }, []) as LangMode;
 
   const [langMode, setLangMode] = useState<LangMode>(initialMode);
+  const langList: LangMode[] = [`en-US`, `ja-JP`];
 
   useEffect(() => {
     localStorage.setItem(`lang`, langMode);
   }, [langMode]);
 
   const toggle = useCallback(() => {
-    setLangMode((mode) => (mode === `en-US` ? `ja-JP` : `en-US`));
+    setLangMode((mode) => {
+      const nowIndex = langList.indexOf(mode);
+      const nextIndex = (nowIndex + 1) % langList.length;
+      return langList[nextIndex];
+    });
   }, []);
 
-  const setLang = (lang: LangMode) => {
-    const nextLang = (() => {
-      switch (lang) {
-        case `en-US`:
-          return `en-US`;
-        case `ja-JP`:
-          return `ja-JP`;
-        default:
-          return `en-US`;
-      }
-    })();
-    setLangMode(nextLang);
-  };
-
-  return { langMode, toggle, setLang };
+  return { langMode, toggle, setLangMode };
 };
 
 export const langModeContainer = createContainer(Store);

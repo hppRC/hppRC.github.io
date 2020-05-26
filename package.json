@@ -12,10 +12,7 @@
     "fix": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .eslintignore . --fix"
   },
   "dependencies": {
-    "@emotion/core": "10.0.28",
-    "@emotion/styled": "10.0.27",
     "autoprefixer": "^9.8.0",
-    "emotion-theming": "10.0.27",
     "next": "9.4.2",
     "next-offline": "5.0.2",
     "nextjs-sitemap-generator": "1.0.0",

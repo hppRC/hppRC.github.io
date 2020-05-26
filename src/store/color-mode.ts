@@ -13,7 +13,7 @@ const darkTheme: Theme = {
 
 const defaultTheme = lightTheme;
 
-const initialColorMode: ColorMode = `Light`;
+const initialColorMode: ColorMode = `theme-light`;
 
 export const colorMode = atom<ColorMode>({
   key: `color-mode`,
@@ -24,9 +24,9 @@ export const colorTheme = selector<Theme>({
   key: `color-theme`,
   get: ({ get }) => {
     switch (get(colorMode)) {
-      case `Light`:
+      case `theme-light`:
         return lightTheme;
-      case `Dark`:
+      case `theme-dark`:
         return darkTheme;
       default:
         return defaultTheme;
