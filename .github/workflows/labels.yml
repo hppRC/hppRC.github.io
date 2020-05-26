@@ -5,6 +5,10 @@ on:
     paths:
       - ".github/labels.yml"
       - ".github/workflows/label_sync.yml"
+  pull_request:
+    paths:
+      - ".github/labels.yml"
+      - ".github/workflows/label_sync.yml"
 
 jobs:
   labeler:
