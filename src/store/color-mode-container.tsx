@@ -8,13 +8,13 @@ const Store = () => {
       const stored = localStorage.getItem(`color`);
       // eslint-disable-next-line no-console
       console.log(stored);
-      return stored ?? `theme-light`;
+      return stored ?? `theme-base`;
     }
-    return `theme-light`;
+    return `theme-base`;
   }, []) as ColorMode;
 
   const [colorMode, setColorMode] = useState<ColorMode>(initialMode);
-  const colorList: ColorMode[] = [`theme-light`, `theme-dark`];
+  const colorList: ColorMode[] = [`theme-base`, `theme-light`, `theme-dark`];
 
   useEffect(() => {
     localStorage.setItem(`color`, colorMode);
