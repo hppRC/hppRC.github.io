@@ -1,6 +1,6 @@
 const Component: React.FCX = () => (
-  <main className=''>
-    <h1 className=''>Hayato Tsukagoshi</h1>
+  <main className='flex flex-col'>
+    <h1 className='font-bold text-4xl'>Hayato Tsukagoshi</h1>
     <div className=''>Nagoya Univ. B4 CS, Takeda-Sasano Lab.</div>
     <section>
       <h2>projects</h2>
