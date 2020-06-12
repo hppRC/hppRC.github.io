@@ -15,10 +15,9 @@ class CustomDocument extends Document implements CustomDocumentInterface {
 
   render(): JSX.Element {
     return (
-      <Html>
+      <Html lang='en'>
         <Head lang='en-US'>
           <meta name='charset' content='UTF-8' />
-          <title>{this.title}</title>
 
           <meta name='description' content={this.description} />
 
