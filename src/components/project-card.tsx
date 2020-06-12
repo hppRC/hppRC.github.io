@@ -13,8 +13,8 @@ export const ProjectCard: React.FCX<Props> = ({ src, webpSrc, alt, title, text, 
   <div className='max-w-sm rounded overflow-hidden shadow-lg'>
     <picture>
       <source srcSet={webpSrc} type='image/webp' />
-      <source srcSet={src} type='image/png' />
-      <img className='w-full' src={src} alt={alt} />
+      <source srcSet={src} type='image/jpeg' />
+      <img width='320' height='180' className='w-full' src={src} alt={alt} />
     </picture>
     <div className='px-6 py-4'>
       <div className='font-bold text-xl mb-2'>{title}</div>
