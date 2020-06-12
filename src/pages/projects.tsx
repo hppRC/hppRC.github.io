@@ -1,18 +1,21 @@
-/* eslint-disable global-require */
+import GenerativeReactImg from 'public/images/generative-react.png';
+import GenerativeReactWebpImg from 'public/images/generative-react.png?webp';
+import KuonImg from 'public/images/kuon.png';
+import KuonWebpImg from 'public/images/kuon.png?webp';
 import { ProjectCard } from 'src/components';
 
 const data = [
   {
-    src: require(`public/images/generative-react.png`),
-    webpSrc: require(`public/images/generative-react.png?webp`),
+    src: GenerativeReactImg,
+    webpSrc: GenerativeReactWebpImg,
     alt: `Generative React`,
     title: `Generative React`,
     text: `graphical website with WebGL & Generative Art works`,
     tags: [`React`, `TypeScript`, `WebGL`],
   },
   {
-    src: require(`public/images/kuon.png`),
-    webpSrc: require(`public/images/kuon.png?webp`),
+    src: KuonImg,
+    webpSrc: KuonWebpImg,
     alt: `Kuon`,
     title: `Kuon`,
     text: `easy to use Twitter API wrapper library`,
