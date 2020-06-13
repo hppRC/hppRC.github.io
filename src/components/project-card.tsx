@@ -9,7 +9,7 @@ type Props = {
   tags: string[];
 };
 
-export const ProjectCard: React.FCX<Props> = ({ src, webpSrc, alt, title, text, tags }) => (
+export const ProjectCard: React.FCX<Props> = ({ src, alt, title, text, tags }) => (
   <div className='max-w-sm rounded overflow-hidden shadow-lg'>
     <img width='320' height='180' className='w-full' src={src} alt={alt} />
 
