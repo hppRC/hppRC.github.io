@@ -1,4 +1,4 @@
-import GenerativeReactImg from 'public/images/generative-react.png?inline';
+import GenerativeReactImg from 'public/images/generative-react.png';
 import GenerativeReactWebpImg from 'public/images/generative-react.png?webp';
 import KuonImg from 'public/images/kuon.png';
 import KuonWebpImg from 'public/images/kuon.png?webp';
