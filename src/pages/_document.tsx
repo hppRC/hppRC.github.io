@@ -9,9 +9,9 @@ interface CustomDocumentInterface {
 class CustomDocument extends Document implements CustomDocumentInterface {
   url = `https://hpprc.dev`;
 
-  title = `hpp Profile Page`;
+  title = `Hayato Tsukagoshi Profile Page`;
 
-  description = `The proflie pages of hpp. Please contact me if you have any questions.`;
+  description = `The proflie pages of Hayato Tsukagoshi. Please contact me if you have any questions.`;
 
   render(): JSX.Element {
     return (
