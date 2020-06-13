@@ -18,6 +18,10 @@ declare module '*.png?webp&lqip' {
   const PNGsrc: string;
   export default PNGsrc;
 }
+declare module '*.png?inline' {
+  const PNGsrc: string;
+  export default PNGsrc;
+}
 declare module '*.jpe?g' {
   const JPGsrc: string;
   export default JPGsrc;
