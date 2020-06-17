@@ -6,13 +6,13 @@ type Props = {
   href: string;
 };
 
-const Tab: React.FCX<Props> = ({ name, href }) => {
+const Tab: React.FCX<Props> = ({ name, href, className }) => {
   const router = useRouter();
-  const activeClassName = `block w-32 text-blue-500 hover:text-blue-800 py-2 px-2 font-bold`;
-  const nonActiveClassName = `block w-32 text-blue-500 hover:text-blue-800 py-2 px-2`;
+  const activeClassName = `block w-20 lg:w-32 font-bold`;
+  const nonActiveClassName = `block w-20 lg:w-32 `;
   const isActive = router.pathname === href;
   return (
-    <li>
+    <li className={className}>
       <Link href={href}>
         <button type='button' className={isActive ? activeClassName : nonActiveClassName}>
           {name}
@@ -23,11 +23,12 @@ const Tab: React.FCX<Props> = ({ name, href }) => {
 };
 
 export const Header: React.FC = () => (
-  <header>
-    <ul className='flex border-b'>
-      <Tab href='/' name='home' />
-      <Tab href='/projects' name='projects' />
-      <Tab href='/links' name='links' />
+  <header className='border-b pointer-events-auto w-full h-16'>
+    <ul className='flex max-w-screen-xl mx-auto w-full h-full items-center'>
+      <Tab href='/' name='Home' className='mr-1 my-1 lg:mr-2 lg:my-2' />
+      <Tab href='/experience' name='Experience' className='m-1 lg:m-2' />
+      <Tab href='/links' name='Links' />
+      <Tab href='/projects' name='Projects' className='ml-1 my-1 lg:ml-2 lg:my-2' />
     </ul>
   </header>
 );

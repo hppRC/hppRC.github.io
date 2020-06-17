@@ -2,7 +2,7 @@ import { FaGithub } from 'react-icons/fa';
 import { ExternalLink } from 'src/components';
 
 export const Footer: React.FC = () => (
-  <footer className='flex items-center justify-center'>
+  <footer className='flex items-center justify-center w-full text-center border-t border-grey p-4 pin-b pointer-events-auto'>
     <div>
       Copyright©2020.
       <ExternalLink href='https://twitter.com/hpp_ricecake'> hpp_ricecake </ExternalLink>
