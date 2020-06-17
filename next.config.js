@@ -8,8 +8,8 @@ sitemap({
   targetDirectory: `public/`,
 });
 
-module.exports = withOptimizedImages(
-  withOffline({
+module.exports = withOffline(
+  withOptimizedImages({
     target: `serverless`,
   })
 );
