@@ -3,21 +3,29 @@ import { Resource } from 'src/types';
 
 const educationResources: ReadonlyArray<Resource> = [
   {
-    title: `Bachelor’s degree, Department of Computer Science, School of Informatics, Nagoya University`,
+    title: `Bachelor’s degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
     period: `April 2017 - expected May 2021`,
     text: `GPA: 3.89/4.30`,
   },
+  {
+    title: `Short-term study abroad at Monash University, Australia`,
+    period: `Febrary 2019 - May 2019`,
+  },
+];
+
+const awardsHonorsResources: ReadonlyArray<Resource> = [
+  { title: `Cyber Agent Backend Tuning Competition`, period: `June 2020`, text: `1st place out of 20 competitors` },
 ];
 
 const certificatesResources: ReadonlyArray<Resource> = [
   {
     title: `TOEFL iBT`,
-    text: `72`,
+    text: `72 (Reading: 24, Listening 14, Speaking 16, Writing 18)`,
     period: `April 2020`,
   },
   {
     title: `TOEIC`,
-    text: `790`,
+    text: `790 (Listening 395, Reading 395)`,
     period: `January 2020`,
   },
   {
@@ -30,7 +38,7 @@ const Component: React.FCX = () => (
   <>
     <section className='py-4'>
       <h1 className='font-bold text-4xl mb-4'>Hayato Tsukagoshi</h1>
-      <p>Resercher of Takeda-Sasano Lab.</p>
+      <p>Nagoya Univ. B4, Takeda-Sasano Lab.</p>
       <p>Email: tsukagohsi.hayato[at]gmail.com</p>
     </section>
     <section className='py-4'>
@@ -39,6 +47,7 @@ const Component: React.FCX = () => (
     </section>
     <section className='py-4'>
       <h2 className='font-bold text-2xl'>Awards / Honors</h2>
+      <OrganizedResources resources={awardsHonorsResources} />
     </section>
     <section className='py-4'>
       <h2 className='font-bold text-2xl'>Certificates</h2>
