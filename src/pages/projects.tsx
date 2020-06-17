@@ -4,6 +4,15 @@ import { ProjectCard } from 'src/components';
 
 const data = [
   {
+    src: require(`public/images/kuon.png`),
+    webpSrc: require(`public/images/kuon.png?webp`),
+    alt: `Kuon`,
+    title: `Kuon`,
+    text: `easy to use Twitter API wrapper library`,
+    tags: [`Rust`, `Twitter API`],
+    href: `https://github.com/hppRC/kuon`,
+  },
+  {
     src: require(`public/images/generative-react.png`),
     webpSrc: require(`public/images/generative-react.png?webp`),
     alt: `Generative React`,
@@ -13,13 +22,13 @@ const data = [
     href: `https://generative-react.hpprc.com`,
   },
   {
-    src: require(`public/images/kuon.png`),
-    webpSrc: require(`public/images/kuon.png?webp`),
-    alt: `Kuon`,
-    title: `Kuon`,
-    text: `easy to use Twitter API wrapper library`,
-    tags: [`Rust`, `Twitter API`],
-    href: `https://github.com/hppRC/kuon`,
+    src: require(`public/images/portofolio.png`),
+    webpSrc: require(`public/images/portofolio.png?webp`),
+    alt: `Portofolio`,
+    title: `hpp Portofolio`,
+    text: `graphical portofolio website`,
+    tags: [`React`, `TypeScript`, `WebGL`],
+    href: `https://hpprc.com`,
   },
 ];
 

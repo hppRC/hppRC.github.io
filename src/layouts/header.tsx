@@ -8,11 +8,11 @@ type Props = {
 
 const Tab: React.FCX<Props> = ({ name, href, className }) => {
   const router = useRouter();
-  const activeClassName = `block w-20 lg:w-32 font-bold`;
+  const activeClassName = `block w-20 lg:w-32`;
   const nonActiveClassName = `block w-20 lg:w-32 `;
   const isActive = router.pathname === href;
   return (
-    <li className={className}>
+    <li className={`${className} hover:opacity-50 transition-opacity duration-100`}>
       <Link href={href}>
         <button type='button' className={isActive ? activeClassName : nonActiveClassName}>
           {name}

@@ -4,7 +4,7 @@ import { Footer } from './footer';
 import { Header } from './header';
 
 const Component: React.FCX = ({ children }) => (
-  <div className='flex flex-col h-screen pointer-events-none'>
+  <div className='flex flex-col min-h-screen pointer-events-none'>
     <Header />
     <main className='flex-1 max-w-screen-xl w-full mx-auto py-4 pointer-events-auto'>{children}</main>
     <Footer />

@@ -5,7 +5,7 @@ const internsihpsResources: ReadonlyArray<Resource> = [
   {
     title: `Writer for AI-SCHOLAR`,
     period: `June 2020 - present`,
-    text: `NLP`,
+    text: `Natural Language Processing`,
   },
   {
     title: `Server-side Engineering Internship at CyberAgent Inc.`,
@@ -32,12 +32,20 @@ const internsihpsResources: ReadonlyArray<Resource> = [
 const eventsResources: ReadonlyArray<Resource> = [
   {
     title: `Cyber Agent Backend Tuning Competition`,
-    text: `1st place`,
+    text: `1st place out of 20 competitors`,
     period: `June 2020`,
   },
   {
+    title: `Cookpad Spring Internships for engineer`,
+    period: `April 2020`,
+  },
+  {
+    title: `DeNA Game data competition`,
+    period: `Feburary 2020`,
+  },
+  {
     title: `N-ISUCON`,
-    text: `3rd place`,
+    text: `3rd place out of 10 teams`,
     period: `Feburary 2020`,
   },
 ];
@@ -63,7 +71,7 @@ const Component: React.FCX = () => (
       <h1 className='font-bold text-4xl'>Experience</h1>
     </section>
     <section className='py-4'>
-      <h2 className='font-bold text-2xl'>Internships</h2>
+      <h2 className='font-bold text-2xl'>Internships / Employments</h2>
       <OrganizedResources resources={internsihpsResources} />
     </section>
     <section className='py-4'>
