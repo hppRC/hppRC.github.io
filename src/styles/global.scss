@@ -9,6 +9,8 @@ html {
     // overscroll-behavior-y: none;
     // transition: background-color 0.15s;
 
+    color: #011627;
+
     a {
       font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       color: #005bf9;
@@ -24,14 +26,13 @@ html {
   }
 }
 
-@media screen and (max-width: 1100px) {
-}
+// * {
+//   outline: solid 2px red;
+// }
+@media screen and (max-width: 1100px) {}
 
-@media screen and (max-width: 768px) {
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 480px) {
-}
+@media screen and (max-width: 480px) {}
 
-@media screen and (max-height: 430px) {
-}
+@media screen and (max-height: 430px) {}
