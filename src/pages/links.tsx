@@ -15,7 +15,7 @@ const resources = {
     },
     { title: `GitHub Repository`, href: `https://github.com/hppRC/NGK2020S` },
   ],
-  'Ujimaru(slides)': [
+  'Uzimaru Happy Birthday LT': [
     {
       title: `LT Slides`,
       href: `https://docs.google.com/presentation/d/1R5dk0Rip-h6WxGVNrggpdUU1WkgvsyEDdJigsJ-yAGg/edit?usp=sharing`,
