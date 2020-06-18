@@ -1,4 +1,4 @@
-import { OrganizedResources } from 'src/components';
+import { ExternalLink, OrganizedResources } from 'src/components';
 import { Resource } from 'src/types';
 
 const educationResources: ReadonlyArray<Resource> = [
@@ -34,22 +34,28 @@ const certificatesResources: ReadonlyArray<Resource> = [
   },
 ];
 
+const cv = {
+  href: `https://docs.google.com/document/d/1dUe1pATmli-5zOTI9YyoEGTsC-8TE2U2WpEwnERukGY/edit?usp=sharing`,
+  children: `cv`,
+};
+
 const Component: React.FCX = () => (
   <>
     <section className='py-4'>
       <h1 className='font-bold text-4xl mb-4'>Hayato Tsukagoshi</h1>
       <p>Nagoya Univ. B4, Takeda-Sasano Lab.</p>
       <p>Email: tsukagohsi.hayato[at]gmail.com</p>
+      <ExternalLink {...cv} />
     </section>
-    <section className='py-4'>
+    <section className='py-4 my-16'>
       <h2 className='font-bold text-2xl'>Education</h2>
       <OrganizedResources resources={educationResources} />
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl'>Awards / Honors</h2>
       <OrganizedResources resources={awardsHonorsResources} />
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl'>Certificates</h2>
       <OrganizedResources resources={certificatesResources} />
     </section>
