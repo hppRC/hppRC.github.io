@@ -67,18 +67,18 @@ const confLTResources: ReadonlyArray<Resource> = [
 
 const Component: React.FCX = () => (
   <>
-    <section className='py-4'>
+    <section className='my-4'>
       <h1 className='font-bold text-4xl'>Experience</h1>
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl'>Internships / Employments</h2>
       <OrganizedResources resources={internsihpsResources} />
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl'>Events</h2>
       <OrganizedResources resources={eventsResources} />
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl'>Conference / LT</h2>
       <OrganizedResources resources={confLTResources} />
     </section>

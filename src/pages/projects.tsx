@@ -37,7 +37,7 @@ const Component: React.FCX = () => (
     <section className='py-4'>
       <h1 className='font-bold text-4xl'>Projects</h1>
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full'>
         {data.map((attrs) => (
           <li className='mx-auto' key={attrs.title}>

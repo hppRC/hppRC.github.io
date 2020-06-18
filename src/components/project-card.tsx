@@ -18,10 +18,10 @@ export const ProjectCard: React.FCX<Props> = ({ src, webpSrc, alt, title, text, 
         <source srcSet={src} type='image/png' />
         <img width='384' height='225' className='w-full' src={src} alt={alt} />
       </picture>
-      <div className='px-6 py-4'>
-        <div className='font-bold text-xl mb-2'>{title}</div>
-        <p className='text-gray-900 text-base'>{text}</p>
-      </div>
+      <section className='px-6 py-4'>
+        <h3 className='font-bold text-xl text-gray-800 mb-2'>{title}</h3>
+        <p className='text-gray-900'>{text}</p>
+      </section>
       <ul className='px-6 py-4'>
         {tags.map((tag) => (
           <li key={tag} className='inline-block bg-gray-200 px-3 py-1 text-sm font-medium text-gray-700 mr-2'>

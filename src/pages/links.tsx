@@ -72,10 +72,10 @@ const miscellaneousness: {
 
 const Component: React.FCX = () => (
   <>
-    <section className='py-4'>
+    <section className='my-4'>
       <h1 className='font-bold text-4xl'>Links</h1>
     </section>
-    <section className='py-4'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl mb-2'>Social</h2>
       <ul>
         {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
@@ -88,10 +88,10 @@ const Component: React.FCX = () => (
         ))}
       </ul>
     </section>
-    <section className='py-4 my-16'>
+    <section className='my-16'>
       <h2 className='font-bold text-2xl'>Miscellaneousness</h2>
       {Object.entries(miscellaneousness).map(([field, resources]) => (
-        <section className='my-16' key={field}>
+        <section className='my-12' key={field}>
           <h3 className='text-xl font-semibold'>{field}</h3>
           <ul>
             {Object.entries(resources).map(([key, data]) => (
