@@ -45,7 +45,7 @@ const Component: React.FCX = () => (
       <h1 className='font-bold text-4xl mb-4'>Hayato Tsukagoshi</h1>
       <p>Nagoya Univ. B4, Takeda-Sasano Lab.</p>
       <p>Email: tsukagohsi.hayato[at]gmail.com</p>
-      <ExternalLink {...cv} />
+      <ExternalLink {...cv} className='text-xl' />
     </section>
     <section className='my-16'>
       <h2 className='font-bold text-2xl'>Education</h2>

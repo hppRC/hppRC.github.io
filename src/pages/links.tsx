@@ -6,16 +6,25 @@ const sorcialLinks = {
   Qiita: { name: `hppRC`, href: `https://qiita.com/hppRC` },
   AtCoder: { name: `hpp`, href: `https://atcoder.jp/users/hpp` },
   Wantedly: { name: `Hayato Tsukagoshi`, href: `https://en-jp.wantedly.com/users/107038522` },
+  connpass: { name: `hppRC`, href: `https://connpass.com/user/hppRC/` },
 };
 
 type MiscellaneousData = { title: string; name?: string; href: string };
 
 const miscellaneousness: {
+  Software: { [key: string]: MiscellaneousData[] };
   Internships: { [key: string]: MiscellaneousData[] };
   Research: { [key: string]: MiscellaneousData[] };
-  Software: { [key: string]: MiscellaneousData[] };
   LT: { [key: string]: MiscellaneousData[] };
 } = {
+  Software: {
+    // 'Portfolio site': [{ title: `hpp portfolio`, href: `https://hpprc.com` }],
+    // 'Generative React': [{ title: `Generative React`, href: `https://generative-react.hpprc.com` }],
+    // Blog: [{ title: `hpp blog`, href: `https://blog.hpprc.com` }],
+    'LLVM based compiler for Pascal': [
+      { title: `GitHub Repository`, name: `CSE3`, href: `https://github.com/hppRC/CSE3` },
+    ],
+  },
   Internships: {
     'CA Tech JOB (Dynalyst)': [
       {
@@ -42,11 +51,6 @@ const miscellaneousness: {
         name: `N-gram Language Models`,
         href: `https://drive.google.com/file/d/1XUTaEph721OvYNTlk_v3qhmbkjF3iQ8E/view?usp=sharing`,
       },
-    ],
-  },
-  Software: {
-    'LLVM based compiler for Pascal': [
-      { title: `GitHub Repository`, name: `CSE3`, href: `https://github.com/hppRC/CSE3` },
     ],
   },
   LT: {
@@ -79,7 +83,7 @@ const Component: React.FCX = () => (
       <h2 className='font-bold text-2xl mb-2'>Social</h2>
       <ul>
         {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
-          <li key={key} className='my-1 flex'>
+          <li key={key} className='my-1 flex' id={`social-${key}`}>
             <p className='block w-1/12'>{key}</p>
             <p>
               <ExternalLink href={href}>{name}</ExternalLink>
@@ -95,7 +99,7 @@ const Component: React.FCX = () => (
           <h3 className='text-xl font-semibold'>{field}</h3>
           <ul>
             {Object.entries(resources).map(([key, data]) => (
-              <li key={key} className='my-4 flex py-1 border-t w-full'>
+              <li key={key} className='my-4 flex py-1 border-t w-full' id={`misc-${field}-${key}`}>
                 <h4 className='text-md w-1/3 truncate'>{key}</h4>
                 <div className='flex flex-col w-2/3'>
                   {data.map(({ title, href, name }) => (

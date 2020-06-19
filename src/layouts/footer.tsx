@@ -10,7 +10,7 @@ export const Footer: React.FC = () => (
     <div>
       <ExternalLink href='https://github.com/hppRC'>
         <i>
-          <FaGithub className='block h-10 ml-2' />
+          <FaGithub className='block h-10 ml-2 text-gray-900' />
         </i>
       </ExternalLink>
     </div>

@@ -48,6 +48,10 @@ const eventsResources: ReadonlyArray<Resource> = [
     text: `3rd place out of 10 teams`,
     period: `Feburary 2020`,
   },
+  {
+    title: `ISUCON9`,
+    period: `September 2019`,
+  },
 ];
 
 const confLTResources: ReadonlyArray<Resource> = [
