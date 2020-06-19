@@ -35,7 +35,7 @@ const certificatesResources: ReadonlyArray<Resource> = [
 ];
 
 const cv = {
-  href: `https://docs.google.com/document/d/1dUe1pATmli-5zOTI9YyoEGTsC-8TE2U2WpEwnERukGY/edit?usp=sharing`,
+  href: `https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing`,
   children: `cv`,
 };
 
