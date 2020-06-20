@@ -10,6 +10,6 @@ sitemap({
 
 module.exports = withOffline(
   withOptimizedImages({
-    target: `serverless`,
+    // target: `serverless`,
   })
 );
