@@ -1,4 +1,4 @@
-import { ExternalLink, OrganizedResources } from 'src/components';
+import { ExternalLink, OrganizedResources, ResourcesSection } from 'src/components';
 import { Resource } from 'src/types';
 
 const educationResources: ReadonlyArray<Resource> = [
@@ -10,6 +10,34 @@ const educationResources: ReadonlyArray<Resource> = [
   {
     title: `Short-term study abroad at Monash University, Australia`,
     period: `Febrary 2019 - May 2019`,
+  },
+];
+
+const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
+  {
+    title: `Writer for AI-SCHOLAR`,
+    period: `June 2020 - present`,
+    text: `Natural Language Processing`,
+  },
+  {
+    title: `Server-side Engineering Internship at CyberAgent Inc.`,
+    period: `May 2020`,
+    text: `Scala, Akka, AWS(ECS, DynamoDB Streams)`,
+  },
+  {
+    title: `Server-side Engineer at Ateam Inc.`,
+    period: `January 2020 - May 2020`,
+    text: `Rails, Vue.js`,
+  },
+  {
+    title: `Server-side Engineering Internship at TeamLab Inc.`,
+    period: `September 2019`,
+    text: `Go, MySQL, AWS(ECR, Fargate)`,
+  },
+  {
+    title: `R&D Engineering Internship at TRYETING Inc.`,
+    period: `April 2019 - November 2019`,
+    text: `Python, R`,
   },
 ];
 
@@ -41,24 +69,16 @@ const cv = {
 
 const Component: React.FCX = () => (
   <>
-    <section className='my-4'>
-      <h1 className='font-bold text-4xl mb-4'>Hayato Tsukagoshi</h1>
+    <section className='my-4 text-sm lg:text-base'>
+      {/* <h1 className='font-bold text-2xl mb-2 lg:text-4xl lg:mb-4'>Hayato Tsukagoshi</h1> */}
       <p>Nagoya Univ. B4, Takeda-Sasano Lab.</p>
       <p>Email: tsukagohsi.hayato[at]gmail.com</p>
-      <ExternalLink {...cv} className='text-xl' />
+      <ExternalLink {...cv} className='text-base lg:text-xl' />
     </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl'>Education</h2>
-      <OrganizedResources resources={educationResources} />
-    </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl'>Awards / Honors</h2>
-      <OrganizedResources resources={awardsHonorsResources} />
-    </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl'>Certificates</h2>
-      <OrganizedResources resources={certificatesResources} />
-    </section>
+    <ResourcesSection title='Education' resources={educationResources} bold />
+    {/* <ResourcesSection title='Internships / Employments' resources={internsihpsEmploymentsResources} /> */}
+    <ResourcesSection title='Awards / Honors' resources={awardsHonorsResources} />
+    <ResourcesSection title='Certificates' resources={certificatesResources} />
   </>
 );
 

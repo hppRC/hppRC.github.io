@@ -4,7 +4,7 @@ const sorcialLinks = {
   GitHub: { name: `hppRC`, href: `https://github.com/hppRC` },
   Twitter: { name: `@hpp_ricecake`, href: `https://twitter.com/hpp_ricecake` },
   Qiita: { name: `hppRC`, href: `https://qiita.com/hppRC` },
-  AtCoder: { name: `hpp`, href: `https://atcoder.jp/users/hpp` },
+  AtCoder: { name: `hpp (rate: 1139)`, href: `https://atcoder.jp/users/hpp` },
   Wantedly: { name: `Hayato Tsukagoshi`, href: `https://en-jp.wantedly.com/users/107038522` },
   connpass: { name: `hppRC`, href: `https://connpass.com/user/hppRC/` },
 };
@@ -28,7 +28,7 @@ const miscellaneousness: {
   Internships: {
     'CA Tech JOB (Dynalyst)': [
       {
-        title: `Presentaion Slides of internship`,
+        title: `Presentaion`,
         name: `CA Tech JOB 成果発表 公開版`,
         href: `https://docs.google.com/presentation/d/1o8TEOKGt89REdpD0KHM0pfb-yJcIgJcoiMJNUOqa1lY/edit?usp=sharing`,
       },
@@ -77,14 +77,14 @@ const miscellaneousness: {
 const Component: React.FCX = () => (
   <>
     <section className='my-4'>
-      <h1 className='font-bold text-4xl'>Links</h1>
+      <h2 className='font-bold text-2xl lg:text-4xl'>Links</h2>
     </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl mb-2'>Social</h2>
-      <ul>
+    <section className='my-4 lg:my-16'>
+      <h2 className='font-bold text-xl lg:text-2xl mb-2'>Social</h2>
+      <ul className='p-2'>
         {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
-          <li key={key} className='my-1 flex' id={`social-${key}`}>
-            <p className='block w-1/12'>{key}</p>
+          <li key={key} className='mb-1 lg:my-1 flex' id={`social-${key}`}>
+            <p className='block w-1/3 lg:w-1/12'>{key}</p>
             <p>
               <ExternalLink href={href}>{name}</ExternalLink>
             </p>
@@ -92,28 +92,34 @@ const Component: React.FCX = () => (
         ))}
       </ul>
     </section>
-    <section className='my-16'>
+    <section className='my-4 lg:my-16'>
       <h2 className='font-bold text-2xl'>Miscellaneousness</h2>
-      {Object.entries(miscellaneousness).map(([field, resources]) => (
-        <section className='my-12' key={field}>
-          <h3 className='text-xl font-semibold'>{field}</h3>
-          <ul>
-            {Object.entries(resources).map(([key, data]) => (
-              <li key={key} className='my-4 flex py-1 border-t w-full' id={`misc-${field}-${key}`}>
-                <h4 className='text-md w-1/3 truncate'>{key}</h4>
-                <div className='flex flex-col w-2/3'>
-                  {data.map(({ title, href, name }) => (
-                    <ExternalLink href={href} key={title + href} className='flex mb-1'>
-                      <p className='mr-4 whitespace-no-wrap'>{name ? `${title} :` : title}</p>
-                      {name && <p className='truncate'>{name}</p>}
-                    </ExternalLink>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+      <ul>
+        {Object.entries(miscellaneousness).map(([field, resources]) => (
+          <li key={field}>
+            <section className='my-4 lg:my-12'>
+              <h3 className='text-xl font-semibold'>{field}</h3>
+              <ul className='my-2'>
+                {Object.entries(resources).map(([key, data]) => (
+                  <li key={key} className='my-2 lg:my-4 lg:flex py-1 border-t w-full' id={`misc-${field}-${key}`}>
+                    <h4 className='text-md lg:w-1/3 truncate'>{key}</h4>
+                    <ul className='flex flex-col px-1 lg:w-2/3'>
+                      {data.map(({ title, href, name }) => (
+                        <li key={title + href}>
+                          <ExternalLink href={href} className='flex text-sm lg:text-base lg:mb-1'>
+                            <p className='mr-4 whitespace-no-wrap'>{name ? `${title} :` : title}</p>
+                            {name && <p className='truncate'>{name}</p>}
+                          </ExternalLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </li>
+        ))}
+      </ul>
     </section>
   </>
 );

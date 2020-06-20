@@ -1,7 +1,8 @@
-import { OrganizedResources } from 'src/components';
+import { OrganizedResources, ResourcesSection } from 'src/components';
 import { Resource } from 'src/types';
 
-const internsihpsResources: ReadonlyArray<Resource> = [
+// detail experiences
+const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
     title: `Writer for AI-SCHOLAR`,
     period: `June 2020 - present`,
@@ -30,28 +31,12 @@ const internsihpsResources: ReadonlyArray<Resource> = [
 ];
 
 const eventsResources: ReadonlyArray<Resource> = [
-  {
-    title: `Cyber Agent Backend Tuning Competition`,
-    text: `1st place out of 20 competitors`,
-    period: `June 2020`,
-  },
-  {
-    title: `Cookpad Spring Internships for engineer`,
-    period: `April 2020`,
-  },
-  {
-    title: `DeNA Game data competition`,
-    period: `Feburary 2020`,
-  },
-  {
-    title: `N-ISUCON`,
-    text: `3rd place out of 10 teams`,
-    period: `Feburary 2020`,
-  },
-  {
-    title: `ISUCON9`,
-    period: `September 2019`,
-  },
+  { title: `Cyber Agent Backend Tuning Competition`, text: `1st place out of 20 competitors`, period: `June 2020` },
+  { title: `Cookpad Spring Internships for engineer`, period: `April 2020` },
+  { title: `DeNA Game data competition`, period: `Feburary 2020` },
+  { title: `N-ISUCON`, text: `3rd place out of 10 teams`, period: `Feburary 2020` },
+  { title: `ISUCON9`, period: `September 2019` },
+  { title: `ICPC 2019 Asia Yokohama Regional`, period: `July 2019` },
 ];
 
 const confLTResources: ReadonlyArray<Resource> = [
@@ -72,20 +57,11 @@ const confLTResources: ReadonlyArray<Resource> = [
 const Component: React.FCX = () => (
   <>
     <section className='my-4'>
-      <h1 className='font-bold text-4xl'>Experience</h1>
+      <h1 className='font-bold text-2xl lg:text-4xl'>Experience</h1>
     </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl'>Internships / Employments</h2>
-      <OrganizedResources resources={internsihpsResources} />
-    </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl'>Events</h2>
-      <OrganizedResources resources={eventsResources} />
-    </section>
-    <section className='my-16'>
-      <h2 className='font-bold text-2xl'>Conference / LT</h2>
-      <OrganizedResources resources={confLTResources} />
-    </section>
+    <ResourcesSection title='Internships / Employments' resources={internsihpsEmploymentsResources} bold />
+    <ResourcesSection title='Events' resources={eventsResources} />
+    <ResourcesSection title='Conference / LT' resources={confLTResources} />
   </>
 );
 
