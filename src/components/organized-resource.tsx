@@ -7,7 +7,7 @@ type InnerProps = {
 };
 
 export const OrganizedResource: React.FCX<InnerProps> = ({ resource: { title, period, text, relatedLink }, bold }) => (
-  <li className='mb-2 lg:my-4 flex flex-col lg:flex-row'>
+  <li className='my-2 lg:my-4 flex flex-col lg:flex-row'>
     <p className='text-gray-700 text-xs lg:text-sm lg:w-1/3'>{period}</p>
     <div className='lg:w-2/3'>
       <h3 className={`leading-tight lg:leading-snug lg:text-lg ${bold ? `font-bold` : ``}`}>
