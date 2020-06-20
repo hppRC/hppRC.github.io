@@ -57,7 +57,7 @@ const confLTResources: ReadonlyArray<Resource> = [
 const Component: React.FCX = () => (
   <>
     <section className='my-4'>
-      <h1 className='font-bold text-2xl lg:text-4xl'>Experience</h1>
+      <h2 className='font-bold text-2xl lg:text-4xl'>Experience</h2>
     </section>
     <ResourcesSection title='Internships / Employments' resources={internsihpsEmploymentsResources} bold />
     <ResourcesSection title='Events' resources={eventsResources} />

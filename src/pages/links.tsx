@@ -7,6 +7,12 @@ const sorcialLinks = {
   AtCoder: { name: `hpp (rate: 1139)`, href: `https://atcoder.jp/users/hpp` },
   Wantedly: { name: `Hayato Tsukagoshi`, href: `https://en-jp.wantedly.com/users/107038522` },
   connpass: { name: `hppRC`, href: `https://connpass.com/user/hppRC/` },
+} as const;
+
+const websiteLinks = {
+  Portfolio: { href: `https://hpprc.com` },
+  Blog: { href: `https://blog.hpprc.com` },
+  'Art works': { href: `https://generative-react.hpprc.com` },
 };
 
 type MiscellaneousData = { title: string; name?: string; href: string };
@@ -79,35 +85,58 @@ const Component: React.FCX = () => (
     <section className='my-4'>
       <h2 className='font-bold text-2xl lg:text-4xl'>Links</h2>
     </section>
+    <div className='my-4 lg:my-8 flex flex-col lg:flex-row'>
+      <section className='lg:w-1/2'>
+        <h2 className='font-bold text-xl lg:text-2xl mb-2'>Social</h2>
+        <ul className='p-2'>
+          {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
+            <li
+              key={key}
+              className='leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base'
+              id={`social-${key}`}
+            >
+              <p className='block w-1/3'>{key}</p>
+              <p className=''>
+                <ExternalLink href={href}>{name}</ExternalLink>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className='lg:w-1/2'>
+        <h2 className='font-bold text-xl lg:text-2xl mb-2'>Website</h2>
+        <ul className='p-2'>
+          {Object.entries(websiteLinks).map(([key, { href }]) => (
+            <li
+              key={key}
+              className='leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base'
+              id={`website-${key}`}
+            >
+              <p className='block w-1/3'>{key}</p>
+              <p className=''>
+                <ExternalLink href={href}>{href}</ExternalLink>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
     <section className='my-4 lg:my-16'>
-      <h2 className='font-bold text-xl lg:text-2xl mb-2'>Social</h2>
-      <ul className='p-2'>
-        {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
-          <li key={key} className='mb-1 lg:my-1 flex' id={`social-${key}`}>
-            <p className='block w-1/3 lg:w-1/12'>{key}</p>
-            <p>
-              <ExternalLink href={href}>{name}</ExternalLink>
-            </p>
-          </li>
-        ))}
-      </ul>
-    </section>
-    <section className='my-4 lg:my-16'>
-      <h2 className='font-bold text-2xl'>Miscellaneousness</h2>
+      <h2 className='font-bold text-xl lg:text-2xl'>Miscellaneousness</h2>
       <ul>
         {Object.entries(miscellaneousness).map(([field, resources]) => (
           <li key={field}>
             <section className='my-4 lg:my-12'>
-              <h3 className='text-xl font-semibold'>{field}</h3>
+              <h3 className='lg:text-xl font-semibold'>{field}</h3>
               <ul className='my-2'>
                 {Object.entries(resources).map(([key, data]) => (
                   <li key={key} className='my-2 lg:my-4 lg:flex py-1 border-t w-full' id={`misc-${field}-${key}`}>
-                    <h4 className='text-md lg:w-1/3 truncate'>{key}</h4>
-                    <ul className='flex flex-col px-1 lg:w-2/3'>
+                    <h4 className='lg:w-1/3 truncate'>{key}</h4>
+                    <ul className='text-sm lg:text-base flex flex-col px-1 lg:w-2/3'>
                       {data.map(({ title, href, name }) => (
                         <li key={title + href}>
                           <ExternalLink href={href} className='flex text-sm lg:text-base lg:mb-1'>
-                            <p className='mr-4 whitespace-no-wrap'>{name ? `${title} :` : title}</p>
+                            <p className='mr-2 lg:mr-4 whitespace-no-wrap'>{name ? `${title} :` : title}</p>
                             {name && <p className='truncate'>{name}</p>}
                           </ExternalLink>
                         </li>
