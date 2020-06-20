@@ -1,4 +1,4 @@
-import { ExternalLink, OrganizedResources, ResourcesSection } from 'src/components';
+import { ExternalLink, ResourcesSection } from 'src/components';
 import { Resource } from 'src/types';
 
 const educationResources: ReadonlyArray<Resource> = [
@@ -13,33 +13,33 @@ const educationResources: ReadonlyArray<Resource> = [
   },
 ];
 
-const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
-  {
-    title: `Writer for AI-SCHOLAR`,
-    period: `June 2020 - present`,
-    text: `Natural Language Processing`,
-  },
-  {
-    title: `Server-side Engineering Internship at CyberAgent Inc.`,
-    period: `May 2020`,
-    text: `Scala, Akka, AWS(ECS, DynamoDB Streams)`,
-  },
-  {
-    title: `Server-side Engineer at Ateam Inc.`,
-    period: `January 2020 - May 2020`,
-    text: `Rails, Vue.js`,
-  },
-  {
-    title: `Server-side Engineering Internship at TeamLab Inc.`,
-    period: `September 2019`,
-    text: `Go, MySQL, AWS(ECR, Fargate)`,
-  },
-  {
-    title: `R&D Engineering Internship at TRYETING Inc.`,
-    period: `April 2019 - November 2019`,
-    text: `Python, R`,
-  },
-];
+// const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
+//   {
+//     title: `Writer for AI-SCHOLAR`,
+//     period: `June 2020 - present`,
+//     text: `Natural Language Processing`,
+//   },
+//   {
+//     title: `Server-side Engineering Internship at CyberAgent Inc.`,
+//     period: `May 2020`,
+//     text: `Scala, Akka, AWS(ECS, DynamoDB Streams)`,
+//   },
+//   {
+//     title: `Server-side Engineer at Ateam Inc.`,
+//     period: `January 2020 - May 2020`,
+//     text: `Rails, Vue.js`,
+//   },
+//   {
+//     title: `Server-side Engineering Internship at TeamLab Inc.`,
+//     period: `September 2019`,
+//     text: `Go, MySQL, AWS(ECR, Fargate)`,
+//   },
+//   {
+//     title: `R&D Engineering Internship at TRYETING Inc.`,
+//     period: `April 2019 - November 2019`,
+//     text: `Python, R`,
+//   },
+// ];
 
 const awardsHonorsResources: ReadonlyArray<Resource> = [
   { title: `Cyber Agent Backend Tuning Competition`, period: `June 2020`, text: `1st place out of 20 competitors` },

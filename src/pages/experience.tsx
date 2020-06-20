@@ -1,4 +1,4 @@
-import { OrganizedResources, ResourcesSection } from 'src/components';
+import { ResourcesSection } from 'src/components';
 import { Resource } from 'src/types';
 
 // detail experiences
