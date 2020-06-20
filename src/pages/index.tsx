@@ -36,11 +36,6 @@ const certificatesResources: ReadonlyArray<Resource> = [
   },
 ];
 
-const cv = {
-  href: `https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing`,
-  children: `cv`,
-};
-
 const Component: React.FCX = () => (
   <>
     <section className='my-8 text-sm lg:text-base flex ml-4 lg:ml-0 items-center'>
@@ -57,7 +52,12 @@ const Component: React.FCX = () => (
           <ExternalLink href='http://cr.fvcrc.i.nagoya-u.ac.jp/'>Takeda-Sasano Lab.</ExternalLink>
         </p>
         <p>Email: tsukagohsi.hayato[at]gmail.com</p>
-        <ExternalLink {...cv} className='text-base lg:text-xl' />
+        <ExternalLink
+          href='https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing'
+          className='text-base lg:text-xl'
+        >
+          cv
+        </ExternalLink>
       </div>
     </section>
     <ResourcesSection title='Education' resources={educationResources} bold />
