@@ -10912,10 +10912,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@4.0.0-dev.20200620:
-  version "4.0.0-dev.20200620"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200620.tgz#b8b3896860d6e9550c8cdd1aca95465ebf0fafc8"
-  integrity sha512-kJF+EmyWpmqwlNoLV5EZPrho7GGB4tvWENaUveGqM3xdR6TwbfFuOs+Yzfe34D8iv+Fzr/dRGCTxRUkFKAhUjA==
+typescript@4.0.0-dev.20200621:
+  version "4.0.0-dev.20200621"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200621.tgz#f81502d04de54e348e69b16cbc61028d0fb0fad2"
+  integrity sha512-I4nfjnqsc1HGVy2uXUYgsG1cKeTqCY+5s5E5IvECjUGarkHpok4k8MpKqQ0GmQNv10TfDF7I6ZUghJ3K1yu7uQ==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"
