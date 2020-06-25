@@ -28,6 +28,7 @@
     "tailwind": "4.0.0",
     "tailwindcss": "1.4.6",
     "unstated-next": "1.1.0",
+    "url-regex": "^5.0.0",
     "webp-loader": "0.6.0"
   },
   "devDependencies": {
