@@ -1,35 +1,6 @@
 import { ResourcesSection } from 'src/components';
 import { Resource } from 'src/types';
 
-// detail experiences
-const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
-  {
-    title: `Writer for AI-SCHOLAR`,
-    period: `June 2020 - present`,
-    text: `Natural Language Processing`,
-  },
-  {
-    title: `Server-side Engineering Internship at CyberAgent Inc.`,
-    period: `May 2020`,
-    text: `Scala, Akka, AWS(ECS, DynamoDB Streams)`,
-  },
-  {
-    title: `Server-side Engineer at Ateam Inc.`,
-    period: `January 2020 - May 2020`,
-    text: `Rails, Vue.js`,
-  },
-  {
-    title: `Server-side Engineering Internship at TeamLab Inc.`,
-    period: `September 2019`,
-    text: `Go, MySQL, AWS(ECR, Fargate)`,
-  },
-  {
-    title: `R&D Engineering Internship at TRYETING Inc.`,
-    period: `April 2019 - November 2019`,
-    text: `Python, R`,
-  },
-];
-
 const eventsResources: ReadonlyArray<Resource> = [
   { title: `Cyber Agent Backend Tuning Competition`, text: `1st place out of 20 competitors`, period: `June 2020` },
   { title: `Cookpad Spring Internships for engineer`, period: `April 2020` },
@@ -54,14 +25,76 @@ const confLTResources: ReadonlyArray<Resource> = [
   },
 ];
 
+type Skill = {
+  Languages?: string[];
+  'Framework / Library'?: string[];
+  Tools?: string[];
+  Cloud?: string[];
+};
+
+const skillsResources: { [key: string]: Skill } = {
+  'Proficient with': {
+    Languages: [`Python`, `C / C++`, `TypeScript / JavaScript`, `Rust`],
+    'Framework / Library': [`React.js`, `Gatsby.js`, `Next.js`, `PyTorch`],
+    Tools: [`Ubuntu`, `Git`, `fish`, `macOS`],
+  },
+  'Have used before at work': {
+    Languages: [`Go`, `Ruby`, `R`, `Scala`, `PHP`, `HTML`, `CSS`],
+    'Framework / Library': [`Ruby on Rails`, `Vue.js`, `Vuex`, `echo`, `Pandas`, `scikit-learn`],
+    Tools: [`Terraform`, `Docker`, `sbt`],
+    Cloud: [`DynamoDB`, `DynamoDB Stream`, `Kinesis`, `ECS`, `Fargate`, `Lambda`, `Cloud Watch`],
+  },
+  'Have used in class and personal projects': {
+    Languages: [`Haskell`, `Elm`, `Verilog HDL`, `assembly (MIPS)`, `glsl`, `Pascal`],
+    'Framework / Library': [
+      `Wordpress`,
+      `Keras`,
+      `Svelte`,
+      `Sapper`,
+      `Laravel`,
+      `OpenCV`,
+      `WebGL`,
+      `Three.js`,
+      `p5.js`,
+    ],
+    Tools: [`Windows`, `CentOS`, `Raspbian`, `Arduino`, `FPGA`, `LLVM`, `zsh`, `Prometheus`, `Grafana`],
+    Cloud: [`Firebase`, `Cloud Firestore`, `Firebase Authentication`, `Cloud SQL`, `Cloud Run`],
+  },
+};
+
 const Component: React.FCX = () => (
   <>
     <section className='my-4'>
       <h2 className='font-bold text-2xl lg:text-4xl'>Experience</h2>
     </section>
-    <ResourcesSection title='Internships / Employments' resources={internsihpsEmploymentsResources} bold />
     <ResourcesSection title='Events' resources={eventsResources} />
     <ResourcesSection title='Conference / LT' resources={confLTResources} />
+    <section className='my-4 lg:my-8'>
+      <h2 className='font-bold text-xl lg:text-2xl'>Skills</h2>
+      <ul>
+        {Object.entries(skillsResources).map(([field, resources]) => (
+          <li key={field}>
+            <section className='my-4 lg:my-12'>
+              <h3 className='lg:text-xl font-semibold'>{field}</h3>
+              <ul>
+                {Object.entries(resources).map(([key, data]) => (
+                  <li key={key} className='my-2 lg:my-4 lg:flex py-1 border-t w-full' id={`misc-${field}-${key}`}>
+                    <h4 className='text-xs lg:text-base lg:w-1/3 text-gray-700'>{key}</h4>
+                    <ul className='text-sm lg:text-base flex flex-wrap lg:w-2/3'>
+                      {data?.map((name) => (
+                        <li key={field + key + name}>
+                          <p className='text-sm lg:text-base mr-2 lg:mr-5'>{name}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </li>
+        ))}
+      </ul>
+    </section>
   </>
 );
 

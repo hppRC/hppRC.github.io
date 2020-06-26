@@ -42,7 +42,7 @@ export const Header: React.FC = () => {
     <header className='fixed top-0 bg-white border-b pointer-events-auto w-full h-12 lg:h-16'>
       <nav className='flex h-full bg-white max-w-screen-xl mx-auto items-center justify-between'>
         <div
-          className={`absolute h-full w-full bg-white border-b transform transition-transform duration-300 ease-in-out ${
+          className={`absolute h-full w-full bg-white border-b transform transition-transform duration-300 ease-in-out px-2 lg:px-0 ${
             open ? `translate-y-full` : `-translate-y-full`
           }`}
           style={{ zIndex: -1 }}
