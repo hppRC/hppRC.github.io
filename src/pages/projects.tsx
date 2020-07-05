@@ -34,7 +34,7 @@ const data = [
 
 const Component: React.FCX = () => (
   <>
-    <section className='py-4'>
+    <section className='my-4'>
       <h1 className='font-bold text-2xl lg:text-4xl'>Projects</h1>
     </section>
     <section className='my-4 lg:my-16'>

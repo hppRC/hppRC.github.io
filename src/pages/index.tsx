@@ -66,7 +66,7 @@ const certificatesResources: ReadonlyArray<Resource> = [
 
 const Component: React.FCX = () => (
   <>
-    <section className='my-8 text-sm lg:text-base flex ml-4 lg:ml-0 items-center'>
+    <section className='my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center'>
       <div className='mr-4 lg:mr-8'>
         <picture>
           <source srcSet={WebpIcon} type='image/webp' />

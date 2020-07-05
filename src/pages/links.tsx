@@ -18,10 +18,7 @@ const websiteLinks = {
 type MiscellaneousData = { title: string; name?: string; href: string };
 
 const miscellaneousness: {
-  Software: { [key: string]: MiscellaneousData[] };
-  Internships: { [key: string]: MiscellaneousData[] };
-  Research: { [key: string]: MiscellaneousData[] };
-  LT: { [key: string]: MiscellaneousData[] };
+  [key: string]: { [key: string]: MiscellaneousData[] };
 } = {
   Software: {
     // 'Portfolio site': [{ title: `hpp portfolio`, href: `https://hpprc.com` }],
@@ -39,9 +36,17 @@ const miscellaneousness: {
         href: `https://docs.google.com/presentation/d/1o8TEOKGt89REdpD0KHM0pfb-yJcIgJcoiMJNUOqa1lY/edit?usp=sharing`,
       },
       {
-        title: `Contributed blog post`,
-        name: `DynamoDB Streamsを用いたAkka Streamsによるキャッシュ処理の実装とDynalystでのインターン`,
+        title: `DynamoDB Streamsを用いたAkka Streamsによるキャッシュ処理の実装とDynalystでのインターン`,
         href: `https://developers.cyberagent.co.jp/blog/archives/25747/`,
+      },
+    ],
+  },
+  'Contributed post': {
+    'AI-SCHOLAR': [
+      { title: `Author page`, href: `https://ai-scholar.tech/author/hpp` },
+      {
+        title: `Attentionの定説が覆る!? SYNTHESIZERが教えてくれるAttentionの可能性と未来`,
+        href: `https://ai-scholar.tech/articles/transformer/attention-synthesizer`,
       },
     ],
   },
