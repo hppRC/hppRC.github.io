@@ -141,7 +141,7 @@ const Component: React.FCX = () => (
                       {data.map(({ title, href, name }) => (
                         <li key={title + href}>
                           <ExternalLink href={href} className='flex text-sm lg:text-base lg:mb-1'>
-                            <p className='mr-2 lg:mr-4 whitespace-no-wrap'>{name ? `${title} :` : title}</p>
+                            <p className='mr-2 lg:mr-4 truncate'>{name ? `${title} :` : title}</p>
                             {name && <p className='truncate'>{name}</p>}
                           </ExternalLink>
                         </li>

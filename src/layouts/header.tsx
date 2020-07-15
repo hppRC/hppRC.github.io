@@ -28,7 +28,7 @@ const TabList: React.FCX<{ onClick?: () => void }> = ({ className, onClick }) =>
   <ul className={`h-full items-center ${className}`}>
     <Tab href='/' name='Home' className='mr-1 my-1 lg:mr-2 lg:my-2' onClick={onClick} />
     <Tab href='/experience' name='Experience' className='m-1 lg:m-2' onClick={onClick} />
-    <Tab href='/links' name='Links' onClick={onClick} />
+    <Tab href='/links' name='Links' className='m-1 lg:m-2' onClick={onClick} />
     <Tab href='/projects' name='Projects' className='m-1 lr-0 lg:m-2 lg:mr-0' onClick={onClick} />
   </ul>
 );
