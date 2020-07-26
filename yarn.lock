@@ -10859,10 +10859,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@4.0.0-dev.20200725:
-  version "4.0.0-dev.20200725"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200725.tgz#05810b84971d9ccf1e8516946e726eb1101a2c7c"
-  integrity sha512-eugbc/gnXZojYLctAfVzwQ833xaT29gfNq30S61SZDeHspNARUZU+vKIpbksiG7VE53UAiUE5Ms25Tf+TEx4Jg==
+typescript@4.0.0-dev.20200726:
+  version "4.0.0-dev.20200726"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200726.tgz#0aab6a1195ecbc00e8456cbcc3ee645378aa5ff9"
+  integrity sha512-rZOVOtKdmav+uOR1aDUxGD6h0tlxKuTOFrxrkKNG7zp7GcRXTVDO824gQ+lavbKyOnjwnMgas1v4FH8kZiQzyg==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"
