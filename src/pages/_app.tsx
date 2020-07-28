@@ -12,7 +12,7 @@ import { Layout } from 'src/layouts';
 // };
 //   // These metrics can be sent to any analytics service
 
-export default ({ Component, pageProps }: AppProps): JSX.Element => (
+const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
     <Head>
       <title>Hayato Tsukagoshi</title>
@@ -22,3 +22,5 @@ export default ({ Component, pageProps }: AppProps): JSX.Element => (
     </Layout>
   </>
 );
+
+export default App;
