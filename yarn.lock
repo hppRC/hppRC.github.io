@@ -7150,10 +7150,10 @@ next@9.5.0:
     webpack "4.44.0"
     webpack-sources "1.4.3"
 
-nextjs-sitemap-generator@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nextjs-sitemap-generator/-/nextjs-sitemap-generator-1.0.0.tgz#88227fea24a055f0d9031bfe4ce303bf537b24b1"
-  integrity sha512-4M5nC2FA1Mf1sDDPQ+a1OJB5iFXjRUuhfQ+V9wVEl8ydzV2jQU6j0lABy+4cHm6KPmQr7ikq3JwOxusbB9nK1w==
+nextjs-sitemap-generator@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/nextjs-sitemap-generator/-/nextjs-sitemap-generator-1.1.1.tgz#38943bb37b44391755975cba93d00f3a951e2442"
+  integrity sha512-267LecBlyAp2HNApn5cNTNxSUCvwBvObrr7AtCe5BYO7VJ3pw8vC70nc4KMEqB2YikTBsESojHtB/aOocmGK5A==
   dependencies:
     date-fns "^2.9.0"
 
