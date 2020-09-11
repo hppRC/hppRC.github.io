@@ -18,7 +18,7 @@
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-optipng": "8.0.0",
     "imagemin-svgo": "8.0.0",
-    "lqip-loader": "2.2.0",
+    "lqip-loader": "2.2.1",
     "next": "9.5.0",
     "next-offline": "5.0.2",
     "next-optimized-images": "2.6.2",
