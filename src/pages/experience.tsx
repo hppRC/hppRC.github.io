@@ -1,5 +1,4 @@
 import { ResourcesSection } from 'src/components';
-import { Resource } from 'src/types';
 
 const eventsResources: ReadonlyArray<Resource> = [
   { title: `Cyber Agent Backend Tuning Competition`, text: `1st place out of 20 competitors`, period: `June 2020` },

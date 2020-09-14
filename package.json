@@ -11,9 +11,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .eslintignore .",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .eslintignore . --fix"
   },
-  "resolutions": {
-    "webpack": "^5.0.0-beta.22"
-  },
+
   "dependencies": {
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-optipng": "8.0.0",

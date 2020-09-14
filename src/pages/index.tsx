@@ -1,7 +1,6 @@
 import Icon from 'public/images/icon.png';
 import WebpIcon from 'public/images/icon.png?webp';
 import { ExternalLink, ResourcesSection } from 'src/components';
-import { Resource } from 'src/types';
 
 const educationResources: ReadonlyArray<Resource> = [
   {
@@ -12,6 +11,10 @@ const educationResources: ReadonlyArray<Resource> = [
   {
     title: `Short-term study abroad at Monash University, Australia`,
     period: `Febrary 2019 - May 2019`,
+  },
+  {
+    title: `Master’s degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
+    period: `expected April 2021 -`,
   },
 ];
 

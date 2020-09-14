@@ -1,5 +1,4 @@
 import { ExternalLink } from 'src/components';
-import { Resource } from 'src/types';
 
 type InnerProps = {
   resource: Resource;
@@ -13,7 +12,7 @@ export const OrganizedResource: React.FCX<InnerProps> = ({ resource: { title, pe
       <h3 className={`leading-tight lg:leading-snug text-sm lg:text-base ${bold ? `font-bold` : ``}`}>
         {relatedLink ? <ExternalLink href={relatedLink}>{title}</ExternalLink> : <>{title}</>}
       </h3>
-      {text && <p className='leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700'>{text}</p>}
+      <p className='leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700'>{text}</p>
     </div>
   </li>
 );

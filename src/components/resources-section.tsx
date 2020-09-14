@@ -1,5 +1,4 @@
 import { OrganizedResources } from 'src/components';
-import { Resource } from 'src/types';
 
 type Props = {
   resources: ReadonlyArray<Resource>;
