@@ -4,7 +4,7 @@ const sorcialLinks = {
   GitHub: { name: `hppRC`, href: `https://github.com/hppRC` },
   Twitter: { name: `@hpp_ricecake`, href: `https://twitter.com/hpp_ricecake` },
   Qiita: { name: `hppRC`, href: `https://qiita.com/hppRC` },
-  AtCoder: { name: `hpp (rate: 1139)`, href: `https://atcoder.jp/users/hpp` },
+  AtCoder: { name: `hpp (rate: 1207)`, href: `https://atcoder.jp/users/hpp` },
   Wantedly: { name: `Hayato Tsukagoshi`, href: `https://en-jp.wantedly.com/users/107038522` },
   connpass: { name: `hppRC`, href: `https://connpass.com/user/hppRC/` },
 } as const;

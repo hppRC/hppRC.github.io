@@ -51,7 +51,7 @@ export const Header: React.FC = () => {
         </div>
         <div className='mx-2 lg:mx-0'>
           <Link href='/'>
-            <h1 className='font-bold text-2xl lg:text-4xl'>Hayato Tsukagoshi</h1>
+            <h1 className='font-bold text-2xl lg:text-4xl cursor-pointer'>Hayato Tsukagoshi</h1>
           </Link>
         </div>
         <TabList className='hidden lg:flex' />
