@@ -82,7 +82,7 @@ const Component: React.FCX = () => (
           Nagoya Univ. B4,
           <ExternalLink href='http://cr.fvcrc.i.nagoya-u.ac.jp/'>Takeda-Sasano Lab.</ExternalLink>
         </p>
-        <p>Email: tsukagohsi.hayato[at]gmail.com</p>
+        <p>Email: tsukagoshi.hayato[at]gmail.com</p>
         <ExternalLink
           href='https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing'
           className='text-base lg:text-xl'
