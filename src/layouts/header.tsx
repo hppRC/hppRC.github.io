@@ -54,8 +54,8 @@ export const Header: React.FC = () => {
             <h1 className='font-bold text-2xl lg:text-4xl cursor-pointer'>Hayato Tsukagoshi</h1>
           </Link>
         </div>
-        <TabList className='hidden lg:flex' />
-        <div className='block relative lg:hidden'>
+        <TabList className='hidden sm:flex' />
+        <div className='block relative sm:hidden'>
           <button type='button' onClick={toggle} className='flex items-center px-3 py-2'>
             <svg className='fill-current h-6 w-6 mr-2 text-gray-700' viewBox='0 0 20 20'>
               <title>Menu</title>
