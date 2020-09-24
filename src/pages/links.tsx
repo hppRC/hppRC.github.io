@@ -11,7 +11,8 @@ const sorcialLinks = {
 
 const websiteLinks = {
   Portfolio: { href: `https://hpprc.com` },
-  Blog: { href: `https://blog.hpprc.com` },
+  Blog: { href: `https://blog.hpprc.dev` },
+  'Profile page': { href: `https://hpprc.dev` },
   'Art works': { href: `https://generative-react.hpprc.com` },
 };
 
@@ -23,7 +24,7 @@ const miscellaneousness: {
   Software: {
     // 'Portfolio site': [{ title: `hpp portfolio`, href: `https://hpprc.com` }],
     // 'Generative React': [{ title: `Generative React`, href: `https://generative-react.hpprc.com` }],
-    // Blog: [{ title: `hpp blog`, href: `https://blog.hpprc.com` }],
+    // Blog: [{ title: `hpp blog`, href: `https://blog.hpprc.dev` }],
     'LLVM based compiler for Pascal': [
       { title: `GitHub Repository`, name: `CSE3`, href: `https://github.com/hppRC/CSE3` },
     ],
