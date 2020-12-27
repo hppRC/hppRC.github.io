@@ -32,33 +32,32 @@ type Skill = {
 };
 
 const skillsResources: { [key: string]: Skill } = {
-  'Proficient with': {
-    Languages: [`Python`, `C / C++`, `TypeScript / JavaScript`, `Rust`],
+  Like: {
+    Languages: [`Python`, `TypeScript`, `Rust`],
     'Framework / Library': [`React.js`, `Gatsby.js`, `Next.js`, `PyTorch`],
-    Tools: [`Ubuntu`, `Git`, `fish`, `macOS`],
   },
-  'Have used before at work': {
-    Languages: [`Go`, `Ruby`, `R`, `Scala`, `PHP`, `HTML`, `CSS`],
-    'Framework / Library': [`Ruby on Rails`, `Vue.js`, `Vuex`, `echo`, `Pandas`, `scikit-learn`],
-    Tools: [`Terraform`, `Docker`, `sbt`],
-    Cloud: [`DynamoDB`, `DynamoDB Stream`, `Kinesis`, `ECS`, `Fargate`, `Lambda`, `Cloud Watch`],
-  },
-  'Have used in class and personal projects': {
-    Languages: [`Haskell`, `Elm`, `Verilog HDL`, `assembly (MIPS)`, `glsl`, `Pascal`],
-    'Framework / Library': [
-      `Wordpress`,
-      `Keras`,
-      `Svelte`,
-      `Sapper`,
-      `Laravel`,
-      `OpenCV`,
-      `WebGL`,
-      `Three.js`,
-      `p5.js`,
-    ],
-    Tools: [`Windows`, `CentOS`, `Raspbian`, `Arduino`, `FPGA`, `LLVM`, `zsh`, `Prometheus`, `Grafana`],
-    Cloud: [`Firebase`, `Cloud Firestore`, `Firebase Authentication`, `Cloud SQL`, `Cloud Run`],
-  },
+  // 'Have used before at work': {
+  //   Languages: [`Go`, `Ruby`, `R`, `Scala`, `PHP`, `HTML`, `CSS`],
+  //   'Framework / Library': [`Ruby on Rails`, `Vue.js`, `Vuex`, `echo`, `Pandas`, `scikit-learn`],
+  //   Tools: [`Terraform`, `Docker`, `sbt`],
+  //   Cloud: [`DynamoDB`, `DynamoDB Stream`, `Kinesis`, `ECS`, `Fargate`, `Lambda`, `Cloud Watch`],
+  // },
+  // 'Have used in class and personal projects': {
+  //   Languages: [`Haskell`, `Elm`, `Verilog HDL`, `assembly (MIPS)`, `glsl`, `Pascal`],
+  //   'Framework / Library': [
+  //     `Wordpress`,
+  //     `Keras`,
+  //     `Svelte`,
+  //     `Sapper`,
+  //     `Laravel`,
+  //     `OpenCV`,
+  //     `WebGL`,
+  //     `Three.js`,
+  //     `p5.js`,
+  //   ],
+  //   Tools: [`Windows`, `CentOS`, `Raspbian`, `Arduino`, `FPGA`, `LLVM`, `zsh`, `Prometheus`, `Grafana`],
+  //   Cloud: [`Firebase`, `Cloud Firestore`, `Firebase Authentication`, `Cloud SQL`, `Cloud Run`],
+  // },
 };
 
 const Component: React.FCX = () => (

@@ -52,6 +52,10 @@ const awardsHonorsResources: ReadonlyArray<Resource> = [
 
 const certificatesResources: ReadonlyArray<Resource> = [
   {
+    title: `Database Specialist Examination (DB)`,
+    period: `December 2020`,
+  },
+  {
     title: `TOEFL iBT`,
     text: `72 (Reading: 24, Listening 14, Speaking 16, Writing 18)`,
     period: `April 2020`,
@@ -63,7 +67,7 @@ const certificatesResources: ReadonlyArray<Resource> = [
   },
   {
     title: `Applied Information Technology Engineer Examination (AP)`,
-    period: `October 2019`,
+    period: `December 2019`,
   },
 ];
 

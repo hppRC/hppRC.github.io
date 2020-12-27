@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const ResourcesSection: React.FCX<Props> = ({ resources, title, className, bold }) => (
-  <section className={`my-4 lg:my-8 ${className}`}>
+  <section className={`my-8 lg:my-16 ${className}`}>
     <h2 className='font-bold text-xl lg:text-2xl'>{title}</h2>
     <OrganizedResources resources={resources} bold={bold} />
   </section>

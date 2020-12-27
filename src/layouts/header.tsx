@@ -16,7 +16,7 @@ const Tab: React.FCX<Props> = ({ name, href, className, onClick }) => {
   return (
     <li className={`${className} text-sm lg:text-base hover:opacity-50 transition-opacity duration-100 ease-in-out`}>
       <Link href={href}>
-        <button type='button' className={isActive ? activeClassName : nonActiveClassName} onClick={onClick}>
+        <button type='button' className={`mb-4 ${isActive ? activeClassName : nonActiveClassName}`} onClick={onClick}>
           {name}
         </button>
       </Link>

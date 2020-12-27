@@ -7,6 +7,7 @@ const sorcialLinks = {
   AtCoder: { name: `hpp (rate: 1207)`, href: `https://atcoder.jp/users/hpp` },
   Wantedly: { name: `Hayato Tsukagoshi`, href: `https://en-jp.wantedly.com/users/107038522` },
   connpass: { name: `hppRC`, href: `https://connpass.com/user/hppRC/` },
+  speakerdeck: { name: `hpp`, href: `https://speakerdeck.com/hpprc` },
 } as const;
 
 const websiteLinks = {
@@ -46,6 +47,10 @@ const miscellaneousness: {
     'AI-SCHOLAR': [
       { title: `Author page`, href: `https://ai-scholar.tech/author/hpp` },
       {
+        title: `捨ててしまうのはもったいない！BERTの出力を組み合わせて文ベクトルを作るSBERT-WK`,
+        href: `https://ai-scholar.tech/articles/natural-language-processing/sbert-wk`,
+      },
+      {
         title: `Attentionの定説が覆る!? SYNTHESIZERが教えてくれるAttentionの可能性と未来`,
         href: `https://ai-scholar.tech/articles/transformer/attention-synthesizer`,
       },
@@ -66,6 +71,23 @@ const miscellaneousness: {
     ],
   },
   LT: {
+    'p1ass Happy Birthday LT': [
+      {
+        title: `LT Slides`,
+        name: `p1ass LT 特設サイトを支える技術`,
+        href: `https://speakerdeck.com/hpprc/p1ass-lt-hpp`,
+      },
+      {
+        title: `GitHub Repository`,
+        name: `nama-tamago.github.io/p1ass-lt-site/`,
+        href: `https://github.com/nama-tamago/p1ass-lt-site`,
+      },
+      {
+        title: `Site URL`,
+        name: `https://nama-tamago.github.io/p1ass-lt-site/`,
+        href: `https://nama-tamago.github.io/p1ass-lt-site/`,
+      },
+    ],
     'Uzimaru Happy Birthday LT': [
       {
         title: `LT Slides`,
@@ -138,7 +160,7 @@ const Component: React.FCX = () => (
                 {Object.entries(resources).map(([key, data]) => (
                   <li key={key} className='my-2 lg:my-4 lg:flex py-1 border-t w-full' id={`misc-${field}-${key}`}>
                     <h4 className='lg:w-1/3 truncate'>{key}</h4>
-                    <ul className='text-sm lg:text-base flex flex-col px-1 lg:w-2/3'>
+                    <ul className='text-sm lg:text-base flex flex-col p-1 lg:w-2/3'>
                       {data.map(({ title, href, name }) => (
                         <li key={title + href}>
                           <ExternalLink href={href} className='flex text-sm lg:text-base lg:mb-1'>
