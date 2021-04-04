@@ -5,7 +5,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "plugins": ["@typescript-eslint", "react", "prettier", "react-hooks"],
   "parserOptions": {
@@ -18,7 +18,6 @@
     "@typescript-eslint/no-unused-vars": [1, { "argsIgnorePattern": "res|next|stage|^err|on|config|e|_" }],
     "arrow-body-style": [2, "as-needed"],
     "no-unused-expressions": [1, { "allowTaggedTemplates": true }],
-    "quotes": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/quotes": [2, "backtick", { "avoidEscape": true }],
@@ -27,7 +26,6 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", "ts", ".tsx"] }],
     "react-hooks/rules-of-hooks": "error",
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "prettier/prettier": ["error", { "arrowParens": "always", "printWidth": 120 }],
     "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
     "no-shadow": 0,
     "react/prop-types": 0,
