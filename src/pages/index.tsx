@@ -36,7 +36,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   },
   {
     title: `Server-side Engineering Internship at CyberAgent Inc.`,
-    period: `May 2020`,
+    period: `March 2020`,
     text: `Scala, Akka, AWS (ECS, DynamoDB Streams)`,
   },
   {
