@@ -4,7 +4,7 @@ const nlpPublications: ReadonlyArray<Resource> = [
   {
     title: `定義文を用いた文埋め込み構成法`,
     text: `semantic embeddings, sentence embeddings`,
-    period: `May 2021`,
+    period: `March 2021`,
   },
 ];
 

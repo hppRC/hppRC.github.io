@@ -9,12 +9,12 @@ const educationResources: ReadonlyArray<Resource> = [
   },
   {
     title: `Bachelor’s degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
-    period: `April 2017 - May 2021`,
+    period: `April 2017 - March 2021`,
     text: `GPA: 3.89/4.30`,
   },
   {
     title: `Short-term study abroad at Monash University, Australia`,
-    period: `Febrary 2019 - May 2019`,
+    period: `Febrary 2019 - March 2019`,
   },
 ];
 
@@ -26,7 +26,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   },
   {
     title: `RECRUIT Job for Student 2021 ~Engineer/Data Specialist`,
-    period: `February 2021 - May 2021`,
+    period: `February 2021 - March 2021`,
     text: `Search System`,
   },
   {
@@ -41,7 +41,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   },
   {
     title: `Server-side Engineer at Ateam Inc.`,
-    period: `January 2020 - May 2020`,
+    period: `January 2020 - March 2020`,
     text: `Rails, Vue.js`,
   },
   {
