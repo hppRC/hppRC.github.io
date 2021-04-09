@@ -10,7 +10,7 @@ const sorcialLinks = {
   Qiita: { name: `hppRC`, href: `https://qiita.com/hppRC` },
   Zenn: { name: `hpp`, href: `https://zenn.dev/hpp` },
   AtCoder: {
-    name: `hpp (Highest rate: 1207)`,
+    name: `hpp (Highest rate: 1269)`,
     href: `https://atcoder.jp/users/hpp`,
   },
   Wantedly: {
