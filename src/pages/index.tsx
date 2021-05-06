@@ -20,14 +20,18 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
-    title: `pixiv Inc.`,
-    period: `April 2021 - `,
-    text: `Novel team`,
+    title: `Software Engineer, Machine Learning, Search, Internship at Mercari Inc.`,
+    period: `May 2021 - `,
   },
   {
-    title: `RECRUIT Job for Student 2021 ~Engineer/Data Specialist`,
+    title: `Server-side Engineering Internship at pixiv Inc.`,
+    period: `April 2021 - May 2021`,
+    text: `Novel team, Search System Engineer`,
+  },
+  {
+    title: `Server-side Engineering Internship at Recruit Co., Ltd.`,
     period: `February 2021 - March 2021`,
-    text: `Search System`,
+    text: `Search System Engineer`,
   },
   {
     title: `Writer for AI-SCHOLAR`,
@@ -47,7 +51,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
     title: `Server-side Engineering Internship at TeamLab Inc.`,
     period: `September 2019`,
-    text: `Go, MySQL, AWS (ECR, Fargate)`,
+    text: `Go, MySQL, AWS (Fargate)`,
   },
   {
     title: `R&D Engineering Internship at TRYETING Inc.`,
@@ -56,7 +60,22 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   },
 ];
 
+const publicationsResources: ReadonlyArray<Resource> = [
+  {
+    title: `DefSent: Sentence Embeddings using Definition Sentences`,
+    period: `ACL-IJCNLP 2021`,
+  },
+  {
+    title: `定義文を用いた文埋め込み構成法`,
+    period: `言語処理学会第27回年次大会 (NLP2021)`,
+  },
+];
+
 const awardsHonorsResources: ReadonlyArray<Resource> = [
+  {
+    title: `JEES/Softbank AI Human Resource Development Scholarship 2021`,
+    period: `2021`,
+  },
   {
     title: `Cyber Agent Backend Tuning Competition`,
     period: `June 2020`,
@@ -109,9 +128,9 @@ const Component: React.FCX = () => (
         <p>Email: tsukagoshi.hayato[at]gmail.com</p>
         <ExternalLink
           href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
-          className="text-base lg:text-xl"
+          className="text-base"
         >
-          cv
+          resume
         </ExternalLink>
       </div>
     </section>
@@ -119,6 +138,11 @@ const Component: React.FCX = () => (
     <ResourcesSection
       title="Internships / Employments"
       resources={internsihpsEmploymentsResources}
+      bold
+    />
+    <ResourcesSection
+      title="Publications"
+      resources={publicationsResources}
       bold
     />
     <ResourcesSection
