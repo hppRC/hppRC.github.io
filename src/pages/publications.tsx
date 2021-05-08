@@ -5,13 +5,14 @@ const nlp2021Publications: ReadonlyArray<Resource> = [
     title: `定義文を用いた文埋め込み構成法`,
     text: `semantic embeddings, sentence embeddings`,
     period: `言語処理学会第27回年次大会 (NLP2021)`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C4-2.pdf`,
   },
 ];
 const ACLIJCNLP2021Publications: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     text: `semantic embeddings, sentence embeddings`,
-    period: `ACL-IJCNLP 2021`,
+    period: `ACL-IJCNLP 2021 main conference (short paper)`,
   },
 ];
 
