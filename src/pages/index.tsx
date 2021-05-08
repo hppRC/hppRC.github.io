@@ -63,7 +63,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021`,
+    period: `ACL-IJCNLP 2021 main conference (short paper)`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
