@@ -118,7 +118,7 @@ const Component: React.FCX = () => (
           src="/images/icon.png"
           width={128}
           height={128}
-          className="h-16 w-16 lg:h-auto lg:w-auto rounded-full"
+          className="h-auto w-auto rounded-full"
           alt="Hayato Tsukagoshi icon"
         />
       </div>
