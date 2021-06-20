@@ -1,5 +1,4 @@
 import { ExternalLink, ResourcesSection } from "src/components";
-import Image from "next/image";
 
 const educationResources: ReadonlyArray<Resource> = [
   {
@@ -115,11 +114,12 @@ const Component: React.FCX = () => (
   <>
     <section className="my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center">
       <div className="h-32 w-32 mr-4 lg:mr-8">
-        <Image
+        <img
           src="/images/icon.png"
           width={128}
           height={128}
           className="h-16 w-16 lg:h-auto lg:w-auto rounded-full"
+          alt={"Hayato Tsukagoshi icon"};
         />
       </div>
       <div className="flex flex-col justify-center">
