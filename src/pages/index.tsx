@@ -119,7 +119,7 @@ const Component: React.FCX = () => (
           width={128}
           height={128}
           className="h-16 w-16 lg:h-auto lg:w-auto rounded-full"
-          alt={"Hayato Tsukagoshi icon"};
+          alt="Hayato Tsukagoshi icon"
         />
       </div>
       <div className="flex flex-col justify-center">
