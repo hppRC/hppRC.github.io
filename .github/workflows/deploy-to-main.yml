@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - source
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -34,5 +36,5 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./out
-          publish_branch: master
+          publish_branch: main
           cname: hpprc.dev
