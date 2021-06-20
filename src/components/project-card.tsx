@@ -1,8 +1,8 @@
 import { ExternalLink } from "src/components";
+import Image from "next/image";
 
 type Props = {
   src: string;
-  webpSrc: string;
   alt: string;
   title: string;
   text: string;
@@ -12,7 +12,6 @@ type Props = {
 
 export const ProjectCard: React.FCX<Props> = ({
   src,
-  webpSrc,
   alt,
   title,
   text,
@@ -21,11 +20,7 @@ export const ProjectCard: React.FCX<Props> = ({
 }) => (
   <div className="xl:max-w-sm rounded overflow-hidden shadow-lg">
     <ExternalLink href={href} className="block w-full h-full">
-      <picture>
-        <source srcSet={webpSrc} type="image/webp" />
-        <source srcSet={src} type="image/png" />
-        <img width="384" height="225" className="w-full" src={src} alt={alt} />
-      </picture>
+      <Image src={src} width={384} height={225} className="w-full" alt={alt} />
       <section className="px-3 py-2 lg:px-6 lg:py-4">
         <h3 className="font-bold text-lg lg:text-xl text-gray-800 mb-2">
           {title}

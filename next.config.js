@@ -11,8 +11,5 @@ sitemap({
 module.exports = withOffline(
   withOptimizedImages({
     // target: `serverless`,
-    future: {
-      webpack5: true,
-    },
   })
 );

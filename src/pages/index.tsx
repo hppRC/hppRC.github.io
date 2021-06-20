@@ -1,6 +1,5 @@
-import Icon from "public/images/icon.png";
-import WebpIcon from "public/images/icon.png?webp";
 import { ExternalLink, ResourcesSection } from "src/components";
+import Image from "next/image";
 
 const educationResources: ReadonlyArray<Resource> = [
   {
@@ -20,23 +19,29 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
-    title: `Software Engineer, Machine Learning, Search, Internship at Mercari Inc.`,
-    period: `May 2021 - `,
+    title: `Research Asistant of "Observation and interpretation AI based on prior knowledge"`,
+    period: `June 2021 - March 2022`,
+    text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
+  },
+  {
+    title: `Software Engineering Internship at Mercari Inc.`,
+    period: `May 2021 - August 2021`,
+    text: `Machine Learning, Search / Go, Python`,
   },
   {
     title: `Server-side Engineering Internship at pixiv Inc.`,
     period: `April 2021 - May 2021`,
-    text: `Novel team, Search System Engineer`,
+    text: `Novel team, Search System Engineer / Python, PHP`,
   },
   {
     title: `Server-side Engineering Internship at Recruit Co., Ltd.`,
     period: `February 2021 - March 2021`,
-    text: `Search System Engineer`,
+    text: `Search System Engineer / ElasticSearch, AES, Locust`,
   },
   {
     title: `Writer for AI-SCHOLAR`,
     period: `June 2020 - present`,
-    text: `Natural Language Processing`,
+    text: `Wrote articles about Natural Language Processing`,
   },
   {
     title: `Server-side Engineering Internship at CyberAgent Inc.`,
@@ -46,17 +51,17 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
     title: `Server-side Engineer at Ateam Inc.`,
     period: `January 2020 - March 2020`,
-    text: `Rails, Vue.js`,
+    text: `Developed in-house management system / Rails, Vue.js`,
   },
   {
     title: `Server-side Engineering Internship at TeamLab Inc.`,
     period: `September 2019`,
-    text: `Go, MySQL, AWS (Fargate)`,
+    text: `Developed API using postal codes and geometrical information / Go, MySQL, AWS (Fargate)`,
   },
   {
     title: `R&D Engineering Internship at TRYETING Inc.`,
     period: `April 2019 - November 2019`,
-    text: `Python, R`,
+    text: `Time series forecasting, denoising / Python, R`,
   },
 ];
 
@@ -64,6 +69,7 @@ const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     period: `ACL-IJCNLP 2021 main conference (short paper)`,
+    relatedLink: `https://arxiv.org/abs/2105.04339`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
@@ -109,17 +115,12 @@ const Component: React.FCX = () => (
   <>
     <section className="my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center">
       <div className="h-32 w-32 mr-4 lg:mr-8">
-        <picture>
-          <source srcSet={WebpIcon} type="image/webp" />
-          <source srcSet={Icon} type="image/png" />
-          <img
-            src={Icon}
-            alt="icon"
-            width="128"
-            height="128"
-            className="h-16 w-16 lg:h-auto lg:w-auto rounded-full"
-          />
-        </picture>
+        <Image
+          src="/images/icon.png"
+          width={128}
+          height={128}
+          className="h-16 w-16 lg:h-auto lg:w-auto rounded-full"
+        />
       </div>
       <div className="flex flex-col justify-center">
         <p>Nagoya University Graduate School of Informatics, M1</p>

@@ -13,6 +13,7 @@ const ACLIJCNLP2021Publications: ReadonlyArray<Resource> = [
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     text: `semantic embeddings, sentence embeddings`,
     period: `ACL-IJCNLP 2021 main conference (short paper)`,
+    relatedLink: `https://arxiv.org/abs/2105.04339`,
   },
 ];
 
