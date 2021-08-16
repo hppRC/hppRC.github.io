@@ -38,7 +38,5 @@ jobs:
           publish_dir: ./out
           publish_branch: main
           cname:
-            www.hpprc.dev
             hpprc.dev
-            hpprc.github.io
 
