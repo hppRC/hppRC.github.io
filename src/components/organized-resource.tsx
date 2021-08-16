@@ -6,7 +6,7 @@ type InnerProps = {
 };
 
 export const OrganizedResource: React.FCX<InnerProps> = ({
-  resource: { title, period, text, relatedLink },
+  resource: { title, period, text, relatedLink, additionalHtml },
   bold,
 }) => (
   <li className="my-4 lg:my-4 flex flex-col lg:flex-row">
@@ -28,6 +28,14 @@ export const OrganizedResource: React.FCX<InnerProps> = ({
       <p className="leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700">
         {text}
       </p>
+      {additionalHtml && (
+        <div
+          className="my-2 leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700"
+          dangerouslySetInnerHTML={{
+            __html: additionalHtml,
+          }}
+        />
+      )}
     </div>
   </li>
 );

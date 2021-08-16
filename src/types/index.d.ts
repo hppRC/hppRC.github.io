@@ -12,4 +12,5 @@ type Resource = {
   period: string;
   text?: string;
   relatedLink?: string;
+  additionalHtml?: string;
 };
