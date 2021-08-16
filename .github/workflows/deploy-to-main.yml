@@ -37,4 +37,4 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./out
           publish_branch: main
-          cname: hpprc.github.io
+          cname: hpprc.dev
