@@ -18,6 +18,11 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
+    title: `Research Internship at NTT CS Lab`,
+    period: `August 2021 - September 2021`,
+    text: `Natural Language Processing / Python`,
+  },
+  {
     title: `Research Asistant of "Observation and interpretation AI based on prior knowledge"`,
     period: `June 2021 - March 2022`,
     text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
@@ -68,11 +73,13 @@ const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     period: `ACL-IJCNLP 2021 main conference (short paper)`,
-    relatedLink: `https://arxiv.org/abs/2105.04339`,
+    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
     period: `言語処理学会第27回年次大会 (NLP2021)`,
+    text: `塚越駿, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C4-2.pdf`,
   },
 ];
@@ -81,6 +88,7 @@ const awardsHonorsResources: ReadonlyArray<Resource> = [
   {
     title: `JEES/Softbank AI Human Resource Development Scholarship 2021`,
     period: `2021`,
+    text: `1,000,000 yen / year`,
   },
   {
     title: `Cyber Agent Backend Tuning Competition`,
