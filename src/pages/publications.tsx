@@ -3,7 +3,8 @@ import { ResourcesSection } from "src/components";
 const Publications: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021 main conference (short paper)`,
+    period: `ACL-IJCNLP 2021
+main conference (short paper)`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
     additionalHtml: `Sentence embedding methods using natural language inference (NLI) datasets have been successfully applied to various tasks.
@@ -15,7 +16,8 @@ Our code is publicly available at <a href="https://github.com/hpprc/defsent">htt
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
-    period: `言語処理学会第27回年次大会 (NLP2021)`,
+    period: `言語処理学会
+第27回年次大会 (NLP2021)`,
     text: `塚越駿, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C4-2.pdf`,
     additionalHtml: `近年，自然言語推論 (Natural Language Inference: NLI) データセットを用いて文埋め込みを構成する手法が成功を収めており，文類似度 (Semantic Textual Similarity: STS) タスクをはじめとする様々なタスクで活用されている．
