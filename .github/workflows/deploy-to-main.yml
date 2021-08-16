@@ -39,4 +39,3 @@ jobs:
           publish_branch: main
           cname:
             hpprc.dev
-
