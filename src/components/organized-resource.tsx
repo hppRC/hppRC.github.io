@@ -10,7 +10,7 @@ export const OrganizedResource: React.FCX<InnerProps> = ({
   bold,
 }) => (
   <li className="my-4 lg:my-4 flex flex-col lg:flex-row">
-    <p className="leading-tight lg:leading-snug text-xs lg:text-sm lg:w-1/3 text-gray-700 ">
+    <p className="whitespace-pre-wrap leading-tight lg:leading-snug text-xs lg:text-sm lg:w-1/3 text-gray-700 ">
       {period}
     </p>
     <div className="lg:w-2/3">
@@ -25,7 +25,7 @@ export const OrganizedResource: React.FCX<InnerProps> = ({
           <>{title}</>
         )}
       </h3>
-      <p className="leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700">
+      <p className="whitespace-pre-wrap leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700">
         {text}
       </p>
       {additionalHtml && (

@@ -18,7 +18,7 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
-    title: `Research Internship at NTT CS Lab`,
+    title: `Research Internship at NTT CS Lab.`,
     period: `August 2021 - September 2021`,
     text: `Natural Language Processing / Python`,
   },
@@ -72,7 +72,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021 main conference (short paper)`,
+    period: `ACL-IJCNLP 2021 main conference\nacceptance rate: 21.3%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
   },

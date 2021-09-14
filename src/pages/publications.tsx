@@ -3,8 +3,7 @@ import { ResourcesSection } from "src/components";
 const Publications: ReadonlyArray<Resource> = [
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021
-main conference (short paper)`,
+    period: `ACL-IJCNLP 2021 main conference\nshort paper\nacceptance rate: 21.3%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
     additionalHtml: `Sentence embedding methods using natural language inference (NLI) datasets have been successfully applied to various tasks.
