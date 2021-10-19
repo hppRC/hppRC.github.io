@@ -14,7 +14,7 @@
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^10.0.0",
+    "imagemin-svgo": "^9",
     "lqip-loader": "^2.2.1",
     "next": "^11.1.2",
     "next-offline": "^5.0.5",
@@ -48,6 +48,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "next-transpile-modules": "^8.0.0",
     "postcss-import": "^14.0.2",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",

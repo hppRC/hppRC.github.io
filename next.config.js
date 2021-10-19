@@ -1,4 +1,8 @@
 /* eslint-disable no-param-reassign */
+const withTM = require(`next-transpile-modules`)([
+  `imagemin-svgo`,
+  `next-optimized-images`,
+]);
 const sitemap = require(`nextjs-sitemap-generator`);
 const withOffline = require(`next-offline`);
 const withOptimizedImages = require(`next-optimized-images`);
@@ -9,7 +13,9 @@ sitemap({
 });
 
 module.exports = withOffline(
-  withOptimizedImages({
-    // target: `serverless`,
-  })
+  withOptimizedImages(
+    withTM({
+      // target: `serverless`,
+    })
+  )
 );
