@@ -1,8 +1,8 @@
 {
   "name": "Hayato Tsukagoshi profile site",
   "short_name": "Hayato Tsukagoshi",
-  "theme_color": "#ffffff",
-  "background_color": "#caf0f8",
+  "theme_color": "#011627",
+  "background_color": "#011627",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/?utm_source=homescreen",

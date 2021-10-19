@@ -34,8 +34,8 @@ class CustomDocument extends Document implements CustomDocumentInterface {
           <meta name="twitter:image" content={`${this.url}/images/ogp.png`} />
 
           <link rel="manifest" href="/manifest.json" />
-          <meta name="theme-color" content="#03045e" />
-          <meta name="msapplication-TileColor" content="#03045e" />
+          <meta name="theme-color" content="#ffffff" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
           <meta
             name="msapplication-TileImage"
             content="/images/icons/ms-icon-144x144.png"
