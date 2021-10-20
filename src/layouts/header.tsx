@@ -20,7 +20,7 @@ const Tab: React.FCX<Props> = ({ name, href, className, onClick }) => {
       <Link href={href}>
         <button
           type="button"
-          className={`mb-4 ${isActive ? activeClassName : inActiveClassName}`}
+          className={`${isActive ? activeClassName : inActiveClassName}`}
           onClick={onClick}
         >
           {name}
