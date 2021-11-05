@@ -3,10 +3,13 @@
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2020"],
+    "lib": [
+      "dom",
+      "es2015",
+      "es2020"
+    ],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-
     "strict": true,
     "esModuleInterop": true,
     "isolatedModules": true,
@@ -21,10 +24,21 @@
     "allowJs": true,
     "assumeChangesOnlyAffectDirectDependencies": true,
     "importHelpers": true,
-
     "baseUrl": ".",
-    "typeRoots": ["src/types", "node_modules/@types"]
+    "typeRoots": [
+      "src/types",
+      "node_modules/@types"
+    ],
+    "incremental": true
   },
-  "exclude": ["node_modules", "out", ".next"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "exclude": [
+    "node_modules",
+    "out",
+    ".next"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
