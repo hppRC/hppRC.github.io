@@ -16,6 +16,7 @@ module.exports = withOffline(
   withOptimizedImages(
     withTM({
       // target: `serverless`,
+      swcMinify: true,
     })
   )
 );
