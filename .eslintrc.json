@@ -5,7 +5,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "plugin:@next/next/recommended"
   ],
   "plugins": ["@typescript-eslint", "react", "prettier", "react-hooks"],
   "parserOptions": {
@@ -17,6 +18,7 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": [1, { "argsIgnorePattern": "res|next|stage|^err|on|config|e|_" }],
     "arrow-body-style": [2, "as-needed"],
+    "func-names": 0,
     "no-unused-expressions": [1, { "allowTaggedTemplates": true }],
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-var-requires": 0,

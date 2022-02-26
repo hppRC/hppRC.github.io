@@ -43,15 +43,19 @@ Our code is publicly available at <a href="https://github.com/hpprc/defsent">htt
   },
 ];
 
-const Component: React.FCX = () => (
-  <>
-    <section className="my-4">
-      <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Publications</h2>
-    </section>
-    <ResourcesSection title="" resources={Publications} bold />
-  </>
-);
+const Component: React.FCX = function () {
+  return (
+    <>
+      <section className="my-4">
+        <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Publications</h2>
+      </section>
+      <ResourcesSection title="" resources={Publications} bold />
+    </>
+  );
+};
 
-const Container: React.FCX = () => <Component />;
+const Container: React.FCX = function () {
+  return <Component />;
+};
 
 export default Container;

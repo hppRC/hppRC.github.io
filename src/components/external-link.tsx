@@ -2,18 +2,20 @@ type ExternalLinkProps = {
   href: string;
 };
 
-export const ExternalLink: React.FCX<ExternalLinkProps> = ({
+export const ExternalLink: React.FCX<ExternalLinkProps> = function ({
   children,
   className,
   href,
-}) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label={href}
-    className={className}
-  >
-    {children}
-  </a>
-);
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={href}
+      className={className}
+    >
+      {children}
+    </a>
+  );
+};

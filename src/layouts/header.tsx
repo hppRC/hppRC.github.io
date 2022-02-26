@@ -8,7 +8,7 @@ type Props = {
   onClick?: () => void;
 };
 
-const Tab: React.FCX<Props> = ({ name, href, className, onClick }) => {
+const Tab: React.FCX<Props> = function ({ name, href, className, onClick }) {
   const router = useRouter();
   const activeClassName = `block w-20 lg:w-32 bg-gray-200 rounded`;
   const inActiveClassName = `block w-20 lg:w-32`;
@@ -17,7 +17,7 @@ const Tab: React.FCX<Props> = ({ name, href, className, onClick }) => {
     <li
       className={`${className} text-sm lg:text-base hover:opacity-50 transition-opacity duration-100 ease-in-out`}
     >
-      <Link href={href}>
+      <Link href={href} passHref>
         <button
           type="button"
           className={`${isActive ? activeClassName : inActiveClassName}`}
@@ -30,34 +30,41 @@ const Tab: React.FCX<Props> = ({ name, href, className, onClick }) => {
   );
 };
 
-const TabList: React.FCX<{ onClick?: () => void }> = ({
+const TabList: React.FCX<{ onClick?: () => void }> = function ({
   className,
   onClick,
-}) => (
-  <ul className={`h-full items-center ${className}`}>
-    <Tab
-      href="/publications"
-      name="Publications"
-      className="m-1 lg:m-2"
-      onClick={onClick}
-    />
-    <Tab
-      href="/experiences"
-      name="Experiences"
-      className="m-1 lg:m-2"
-      onClick={onClick}
-    />
-    <Tab href="/links" name="Links" className="m-1 lg:m-2" onClick={onClick} />
-    <Tab
-      href="/projects"
-      name="Projects"
-      className="m-1 lr-0 lg:m-2 lg:mr-0"
-      onClick={onClick}
-    />
-  </ul>
-);
+}) {
+  return (
+    <ul className={`h-full items-center ${className}`}>
+      <Tab
+        href="/publications"
+        name="Publications"
+        className="m-1 lg:m-2"
+        onClick={onClick}
+      />
+      <Tab
+        href="/experiences"
+        name="Experiences"
+        className="m-1 lg:m-2"
+        onClick={onClick}
+      />
+      <Tab
+        href="/links"
+        name="Links"
+        className="m-1 lg:m-2"
+        onClick={onClick}
+      />
+      <Tab
+        href="/projects"
+        name="Projects"
+        className="m-1 lr-0 lg:m-2 lg:mr-0"
+        onClick={onClick}
+      />
+    </ul>
+  );
+};
 
-export const Header: React.FC = () => {
+export const Header: React.FC = function () {
   const [open, setOpen] = useState(false);
   const toggle = useCallback(() => {
     setOpen((open) => !open);
@@ -74,7 +81,7 @@ export const Header: React.FC = () => {
           <TabList className="flex" onClick={toggle} />
         </div>
         <div className="mx-2 lg:mx-0">
-          <Link href="/">
+          <Link href="/" passHref>
             <h1 className="font-bold text-2xl lg:text-4xl cursor-pointer">
               Hayato Tsukagoshi
             </h1>

@@ -141,88 +141,92 @@ const miscellaneousness: {
   },
 };
 
-const Component: React.FCX = () => (
-  <>
-    <section className="my-4">
-      <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Links</h2>
-    </section>
-    <div className="my-4 lg:my-8 flex flex-col lg:flex-row">
-      <section className="lg:w-1/2">
-        <h2 className="font-bold text-xl lg:text-2xl mb-2">Social</h2>
-        <ul className="p-2">
-          {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
-            <li
-              key={key}
-              className="leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base"
-              id={`social-${key}`}
-            >
-              <p className="block w-1/3">{key}</p>
-              <p className="">
-                <ExternalLink href={href}>{name}</ExternalLink>
-              </p>
+const Component: React.FCX = function () {
+  return (
+    <>
+      <section className="my-4">
+        <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Links</h2>
+      </section>
+      <div className="my-4 lg:my-8 flex flex-col lg:flex-row">
+        <section className="lg:w-1/2">
+          <h2 className="font-bold text-xl lg:text-2xl mb-2">Social</h2>
+          <ul className="p-2">
+            {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
+              <li
+                key={key}
+                className="leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base"
+                id={`social-${key}`}
+              >
+                <p className="block w-1/3">{key}</p>
+                <p className="">
+                  <ExternalLink href={href}>{name}</ExternalLink>
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+        <section className="lg:w-1/2">
+          <h2 className="font-bold text-xl lg:text-2xl mb-2">Website</h2>
+          <ul className="p-2">
+            {Object.entries(websiteLinks).map(([key, { href }]) => (
+              <li
+                key={key}
+                className="leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base"
+                id={`website-${key}`}
+              >
+                <p className="block w-1/3">{key}</p>
+                <p className="">
+                  <ExternalLink href={href}>{href}</ExternalLink>
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+      <section className="my-4 lg:my-16">
+        <h2 className="font-bold text-xl lg:text-2xl">Miscellaneousness</h2>
+        <ul>
+          {Object.entries(miscellaneousness).map(([field, resources]) => (
+            <li key={field}>
+              <section className="my-4 lg:my-12">
+                <h3 className="lg:text-xl font-semibold">{field}</h3>
+                <ul className="my-2">
+                  {Object.entries(resources).map(([key, data]) => (
+                    <li
+                      key={key}
+                      className="my-2 lg:my-4 lg:flex py-1 border-t w-full"
+                      id={`misc-${field}-${key}`}
+                    >
+                      <h4 className="lg:w-1/3 pr-4 truncate">{key}</h4>
+                      <ul className="text-sm lg:text-base flex flex-col p-1 lg:w-2/3">
+                        {data.map(({ title, href, name }) => (
+                          <li key={title + href}>
+                            <ExternalLink
+                              href={href}
+                              className="flex text-sm lg:text-base lg:mb-1"
+                            >
+                              <p className="mr-2 lg:mr-4 truncate">
+                                {name ? `${title} :` : title}
+                              </p>
+                              {name && <p className="truncate">{name}</p>}
+                            </ExternalLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </section>
             </li>
           ))}
         </ul>
       </section>
-      <section className="lg:w-1/2">
-        <h2 className="font-bold text-xl lg:text-2xl mb-2">Website</h2>
-        <ul className="p-2">
-          {Object.entries(websiteLinks).map(([key, { href }]) => (
-            <li
-              key={key}
-              className="leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base"
-              id={`website-${key}`}
-            >
-              <p className="block w-1/3">{key}</p>
-              <p className="">
-                <ExternalLink href={href}>{href}</ExternalLink>
-              </p>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </div>
-    <section className="my-4 lg:my-16">
-      <h2 className="font-bold text-xl lg:text-2xl">Miscellaneousness</h2>
-      <ul>
-        {Object.entries(miscellaneousness).map(([field, resources]) => (
-          <li key={field}>
-            <section className="my-4 lg:my-12">
-              <h3 className="lg:text-xl font-semibold">{field}</h3>
-              <ul className="my-2">
-                {Object.entries(resources).map(([key, data]) => (
-                  <li
-                    key={key}
-                    className="my-2 lg:my-4 lg:flex py-1 border-t w-full"
-                    id={`misc-${field}-${key}`}
-                  >
-                    <h4 className="lg:w-1/3 pr-4 truncate">{key}</h4>
-                    <ul className="text-sm lg:text-base flex flex-col p-1 lg:w-2/3">
-                      {data.map(({ title, href, name }) => (
-                        <li key={title + href}>
-                          <ExternalLink
-                            href={href}
-                            className="flex text-sm lg:text-base lg:mb-1"
-                          >
-                            <p className="mr-2 lg:mr-4 truncate">
-                              {name ? `${title} :` : title}
-                            </p>
-                            {name && <p className="truncate">{name}</p>}
-                          </ExternalLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          </li>
-        ))}
-      </ul>
-    </section>
-  </>
-);
+    </>
+  );
+};
 
-const Container: React.FCX = () => <Component />;
+const Container: React.FCX = function () {
+  return <Component />;
+};
 
 export default Container;

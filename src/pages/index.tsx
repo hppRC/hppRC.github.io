@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ExternalLink, ResourcesSection } from "src/components";
 
 const educationResources: ReadonlyArray<Resource> = [
@@ -129,51 +130,58 @@ const certificatesResources: ReadonlyArray<Resource> = [
   },
 ];
 
-const Component: React.FCX = () => (
-  <>
-    <section className="my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center">
-      <div className="h-32 w-32 mr-4 lg:mr-8">
-        <img
-          src="/images/icon.png"
-          width={128}
-          height={128}
-          className="h-auto w-auto rounded-full"
-          alt="Hayato Tsukagoshi icon"
-        />
-      </div>
-      <div className="flex flex-col justify-center">
-        <p>Nagoya University Graduate School of Informatics, M1</p>
-        <ExternalLink href="http://cr.fvcrc.i.nagoya-u.ac.jp/">
-          Takeda-Sasano Lab.
-        </ExternalLink>
-        <p>Email: tsukagoshi.hayato[at]gmail.com</p>
-        <ExternalLink
-          href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
-          className="text-base"
-        >
-          resume
-        </ExternalLink>
-      </div>
-    </section>
-    <ResourcesSection title="Education" resources={educationResources} bold />
-    <ResourcesSection
-      title="Internships / Employments"
-      resources={internsihpsEmploymentsResources}
-      bold
-    />
-    <ResourcesSection
-      title="Publications"
-      resources={publicationsResources}
-      bold
-    />
-    <ResourcesSection
-      title="Awards / Honors"
-      resources={awardsHonorsResources}
-    />
-    <ResourcesSection title="Certificates" resources={certificatesResources} />
-  </>
-);
+const Component: React.FCX = function () {
+  return (
+    <>
+      <section className="my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center">
+        <div className="h-32 w-32 mr-4 lg:mr-8">
+          <Image
+            src="/images/icon.png"
+            width={128}
+            height={128}
+            className="h-auto w-auto rounded-full"
+            alt="Hayato Tsukagoshi icon"
+          />
+        </div>
+        <div className="flex flex-col justify-center">
+          <p>Nagoya University Graduate School of Informatics, M1</p>
+          <ExternalLink href="http://cr.fvcrc.i.nagoya-u.ac.jp/">
+            Takeda-Sasano Lab.
+          </ExternalLink>
+          <p>Email: tsukagoshi.hayato[at]gmail.com</p>
+          <ExternalLink
+            href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
+            className="text-base"
+          >
+            resume
+          </ExternalLink>
+        </div>
+      </section>
+      <ResourcesSection title="Education" resources={educationResources} bold />
+      <ResourcesSection
+        title="Internships / Employments"
+        resources={internsihpsEmploymentsResources}
+        bold
+      />
+      <ResourcesSection
+        title="Publications"
+        resources={publicationsResources}
+        bold
+      />
+      <ResourcesSection
+        title="Awards / Honors"
+        resources={awardsHonorsResources}
+      />
+      <ResourcesSection
+        title="Certificates"
+        resources={certificatesResources}
+      />
+    </>
+  );
+};
 
-const Container: React.FCX = () => <Component />;
+const Container: React.FCX = function () {
+  return <Component />;
+};
 
 export default Container;

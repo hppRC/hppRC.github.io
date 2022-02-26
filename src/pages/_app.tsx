@@ -12,15 +12,17 @@ import { Layout } from "src/layouts";
 // };
 //   // These metrics can be sent to any analytics service
 
-const App = ({ Component, pageProps }: AppProps): JSX.Element => (
-  <>
-    <Head>
-      <title>Hayato Tsukagoshi</title>
-    </Head>
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  </>
-);
+const App = function ({ Component, pageProps }: AppProps): JSX.Element {
+  return (
+    <>
+      <Head>
+        <title>Hayato Tsukagoshi</title>
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
+};
 
 export default App;
