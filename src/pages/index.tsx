@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ExternalLink, ResourcesSection } from "src/components";
 
 const educationResources: ReadonlyArray<Resource> = [
@@ -135,7 +134,7 @@ const Component: React.FCX = function () {
     <>
       <section className="my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center">
         <div className="h-32 w-32 mr-4 lg:mr-8">
-          <Image
+          <img
             src="/images/icon.png"
             width={128}
             height={128}
