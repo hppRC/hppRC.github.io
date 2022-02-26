@@ -2,6 +2,22 @@ import { ResourcesSection } from "src/components";
 
 const Publications: ReadonlyArray<Resource> = [
   {
+    title: `Comparison and Combination of Sentence Embeddings Derived from Different Supervision Signals`,
+    period: `arXiv preprint`,
+    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://arxiv.org/abs/2202.02990`,
+    additionalHtml: `We have recently seen many successful applications of sentence embedding methods.
+It has not been well understood, however, what kind of properties are captured in the resulting sentence embeddings, depending on the supervision signals.
+In this paper, we focus on two types of sentence embeddings obtained by using natural language inference (NLI) datasets and definition sentences from a word dictionary and investigate their properties by comparing their performance with the semantic textual similarity (STS) task using the STS data partitioned by two perspectives:
+1) the sources of sentences, and 2) the superficial similarity of the sentence pairs, and their performance on the downstream and probing tasks.
+We also demonstrate that combining the two types of embeddings yields substantially better performances than respective models on unsupervised STS tasks and downstream tasks.`,
+  },
+  {
+    title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
+    period: `言語処理学会第28回年次大会 (NLP2022)`,
+    text: `塚越駿, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
+  },
+  {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     period: `ACL-IJCNLP 2021 main conference\nshort paper\nacceptance rate: 21.3%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,

@@ -6,7 +6,7 @@ const educationResources: ReadonlyArray<Resource> = [
     period: `April 2021 - `,
   },
   {
-    title: `Bachelor’s degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
+    title: `Bachelor's degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
     period: `April 2017 - March 2021`,
     text: `GPA: 3.89/4.30`,
   },
@@ -75,6 +75,17 @@ const publicationsResources: ReadonlyArray<Resource> = [
     period: `ACL-IJCNLP 2021 main conference\nacceptance rate: 21.3%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
+  },
+  {
+    title: `Comparison and Combination of Sentence Embeddings Derived from Different Supervision Signals`,
+    period: `arXiv preprint`,
+    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://arxiv.org/abs/2202.02990`,
+  },
+  {
+    title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
+    period: `言語処理学会第28回年次大会 (NLP2022)`,
+    text: `塚越駿, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
