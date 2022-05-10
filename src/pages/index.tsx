@@ -18,14 +18,14 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
+    title: `Research Asistant of "Observation and interpretation AI based on prior knowledge"`,
+    period: `June 2021 - March 2023`,
+    text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
+  },
+  {
     title: `Research Internship at NTT CS Lab.`,
     period: `August 2021 - September 2021`,
     text: `Natural Language Processing / Python`,
-  },
-  {
-    title: `Research Asistant of "Observation and interpretation AI based on prior knowledge"`,
-    period: `June 2021 - March 2022`,
-    text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
   },
   {
     title: `Software Engineering Internship at Mercari Inc.`,
@@ -71,14 +71,8 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 
 const publicationsResources: ReadonlyArray<Resource> = [
   {
-    title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021 main conference\nacceptance rate: 21.3%`,
-    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
-    relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
-  },
-  {
-    title: `Comparison and Combination of Sentence Embeddings Derived from Different Supervision Signals`,
-    period: `arXiv preprint`,
+    title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
+    period: `*SEM 2022`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://arxiv.org/abs/2202.02990`,
   },
@@ -86,6 +80,13 @@ const publicationsResources: ReadonlyArray<Resource> = [
     title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
     period: `言語処理学会第28回年次大会 (NLP2022)`,
     text: `塚越駿, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/D5-4.pdf`,
+  },
+  {
+    title: `DefSent: Sentence Embeddings using Definition Sentences`,
+    period: `ACL-IJCNLP 2021 main conference\nacceptance rate: 21.3%`,
+    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
@@ -95,10 +96,47 @@ const publicationsResources: ReadonlyArray<Resource> = [
   },
 ];
 
+const activitiesResources: ReadonlyArray<Resource> = [
+  {
+    title: `[輪講資料] SimCSE: Simple Contrastive Learning of Sentence Embeddings`,
+    period: `Feburary 2022`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-simcse-simple-contrastive-learning-of-sentence-embeddings-823255cd-bd1f-40ec-a65c-0eced7a9191d`,
+    text: `Reading group material. Discuss SimCSE, which is a very simple but effective State-of-the-Art sentence embedding method using a pre-trained language model and contrastive learning.`,
+  },
+  {
+    title: `ログデータと言語モデルを用いた同義語辞書の自動構築`,
+    period: `May 2021 - August 2021`,
+    relatedLink: `https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/`,
+    text: `Blog post. Software Engineer, Machine Learning, Search Internship at Mercari Inc.`,
+  },
+  {
+    title: `Amazon Elasticsearch Serviceへの移行にかかる調査とLocustを用いた負荷試験`,
+    period: `February 2021 - March 2021`,
+    relatedLink: `https://blog.recruit.co.jp/rtc/2021/04/01/amazon-elasticsearch-service/`,
+    text: `Blog post. Server-side Engineering Internship at Recruit Inc.`,
+  },
+  {
+    title: `DynamoDB Streamsを用いたAkka Streamsによるキャッシュ処理の実装とDynalystでのインターン`,
+    period: `March 2020`,
+    relatedLink: `https://developers.cyberagent.co.jp/blog/archives/25747/`,
+    text: `Blog post. Server-side Engineering Internship at CyberAgent Inc.`,
+  },
+];
+
 const awardsHonorsResources: ReadonlyArray<Resource> = [
   {
+    title: `Nagoya University Interdisciplinary Frontier Fellowship`,
+    period: `April 2023 - March 2026`,
+    text: `180,000 yen / month + 250,000 yen / year`,
+  },
+  {
+    title: `名古屋大学大学院 情報学研究科 修士研究中間発表 優秀賞`,
+    period: `April 2022`,
+    text: `異なる教師信号から構築した文ベクトルの比較と統合手法の提案`,
+  },
+  {
     title: `JEES/Softbank AI Human Resource Development Scholarship 2021`,
-    period: `2021`,
+    period: `April 2021 - March 2022`,
     text: `1,000,000 yen / year`,
   },
   {
@@ -165,6 +203,11 @@ const Component: React.FCX = function () {
       <ResourcesSection
         title="Publications"
         resources={publicationsResources}
+        bold
+      />
+      <ResourcesSection
+        title="Activities"
+        resources={activitiesResources}
         bold
       />
       <ResourcesSection

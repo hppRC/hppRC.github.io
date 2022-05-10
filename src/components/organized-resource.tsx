@@ -17,7 +17,7 @@ export const OrganizedResource: React.FCX<InnerProps> = function ({
       </p>
       <div className="lg:w-2/3">
         <h3
-          className={`leading-tight lg:leading-snug text-sm lg:text-base ${
+          className={`whitespace-pre-wrap leading-tight lg:leading-snug text-sm lg:text-base ${
             bold ? `font-bold` : ``
           }`}
         >

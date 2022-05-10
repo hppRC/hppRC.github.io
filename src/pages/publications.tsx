@@ -2,8 +2,8 @@ import { ResourcesSection } from "src/components";
 
 const Publications: ReadonlyArray<Resource> = [
   {
-    title: `Comparison and Combination of Sentence Embeddings Derived from Different Supervision Signals`,
-    period: `arXiv preprint`,
+    title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
+    period: `*SEM 2022`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://arxiv.org/abs/2202.02990`,
     additionalHtml: `We have recently seen many successful applications of sentence embedding methods.
@@ -16,6 +16,10 @@ We also demonstrate that combining the two types of embeddings yields substantia
     title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
     period: `言語処理学会第28回年次大会 (NLP2022)`,
     text: `塚越駿, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/D5-4.pdf`,
+    additionalHtml: `複雑な文を同じ意味の単純な複数の文に分割するSplit and Rephraseタスクは，可読性の向上や機械的なテキスト処理の性能向上に有用である．
+本研究では，Split and Rephrase の性能向上のため，訓練データセットに含まれている文分割前後の文意が一致しない事例を含意関係分類を用いて除去するフィルタリングと，モデルが入力文に対し忠実な文生成を行うよう出力から入力を再構成する再現器を用いた訓練手法を提案する．
+標準的なベンチマークデータセットを用いた実験の結果，提案手法が世界最高性能を達成したことを確認した．`,
   },
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
