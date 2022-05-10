@@ -1,5 +1,6 @@
 type ExternalLinkProps = {
   href: string;
+  children?: React.ReactNode | string;
 };
 
 export const ExternalLink: React.FCX<ExternalLinkProps> = function ({

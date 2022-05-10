@@ -159,7 +159,9 @@ const Component: React.FCX = function () {
               >
                 <p className="block w-1/3">{key}</p>
                 <p className="">
-                  <ExternalLink href={href}>{name}</ExternalLink>
+                  <ExternalLink href={href}>
+                    <span>{name}</span>
+                  </ExternalLink>
                 </p>
               </li>
             ))}

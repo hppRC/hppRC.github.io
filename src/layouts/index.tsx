@@ -3,7 +3,9 @@ import React from "react";
 import { Footer } from "./footer";
 import { Header } from "./header";
 
-const Component: React.FCX = function ({ children }) {
+const Component: React.FCX<{ children?: React.ReactNode }> = function ({
+  children,
+}) {
   return (
     <div className="flex flex-col min-h-screen pointer-events-none">
       <Header />
@@ -15,6 +17,8 @@ const Component: React.FCX = function ({ children }) {
   );
 };
 
-export const Layout: React.FCX = function ({ children }) {
+export const Layout: React.FCX<{ children?: React.ReactNode }> = function ({
+  children,
+}) {
   return <Component>{children}</Component>;
 };

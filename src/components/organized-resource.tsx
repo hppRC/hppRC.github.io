@@ -18,7 +18,7 @@ export const OrganizedResource: React.FCX<InnerProps> = function ({
       <div className="lg:w-2/3">
         <h3
           className={`whitespace-pre-wrap leading-tight lg:leading-snug text-sm lg:text-base ${
-            bold ? `font-bold` : ``
+            bold && `font-bold`
           }`}
         >
           {relatedLink ? (

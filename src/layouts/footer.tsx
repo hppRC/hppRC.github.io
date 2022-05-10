@@ -7,8 +7,10 @@ export const Footer: React.FC = function () {
       <div>
         Copyright©2022. Developed and Designed by
         <ExternalLink href="https://twitter.com/hpp_ricecake">
-          {` `}
-          Hayato Tsukagoshi{` `}
+          <>
+            {` `}
+            Hayato Tsukagoshi{` `}
+          </>
         </ExternalLink>
       </div>
       <div>
