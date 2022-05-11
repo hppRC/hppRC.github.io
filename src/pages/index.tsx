@@ -18,7 +18,7 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
-    title: `Research Asistant of "Observation and interpretation AI based on prior knowledge"`,
+    title: `Research Assistant of Moonshot R&D project "Observation and interpretation AI based on prior knowledge"`,
     period: `June 2021 - March 2023`,
     text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
   },
@@ -181,7 +181,7 @@ const Component: React.FCX = function () {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <p>Nagoya University Graduate School of Informatics, M1</p>
+          <p>Nagoya University Graduate School of Informatics, M2</p>
           <ExternalLink href="http://cr.fvcrc.i.nagoya-u.ac.jp/">
             Takeda-Sasano Lab.
           </ExternalLink>
