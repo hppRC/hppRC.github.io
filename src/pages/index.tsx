@@ -73,25 +73,25 @@ const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
     period: `*SEM 2022`,
-    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://arxiv.org/abs/2202.02990`,
   },
   {
     title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
     period: `言語処理学会第28回年次大会 (NLP2022)`,
-    text: `塚越駿, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
+    additionalHtml: `<u>塚越駿</u>, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/D5-4.pdf`,
   },
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     period: `ACL-IJCNLP 2021 main conference\nacceptance rate: 21.3%`,
-    text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
     period: `言語処理学会第27回年次大会 (NLP2021)`,
-    text: `塚越駿, 笹野遼平, 武田浩一`,
+    additionalHtml: `<u>塚越駿</u>, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C4-2.pdf`,
   },
 ];
