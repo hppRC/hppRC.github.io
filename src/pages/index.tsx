@@ -3,7 +3,7 @@ import { ExternalLink, ResourcesSection } from "src/components";
 const educationResources: ReadonlyArray<Resource> = [
   {
     title: `Master's degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
-    period: `April 2021 - `,
+    period: `April 2021 - expected March 2023`,
   },
   {
     title: `Bachelor's degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
@@ -12,7 +12,7 @@ const educationResources: ReadonlyArray<Resource> = [
   },
   {
     title: `Short-term study abroad at Monash University, Australia`,
-    period: `Febrary 2019 - March 2019`,
+    period: `February 2019 - March 2019`,
   },
 ];
 
@@ -99,7 +99,7 @@ const publicationsResources: ReadonlyArray<Resource> = [
 const activitiesResources: ReadonlyArray<Resource> = [
   {
     title: `[輪講資料] SimCSE: Simple Contrastive Learning of Sentence Embeddings`,
-    period: `Feburary 2022`,
+    period: `February 2022`,
     relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-simcse-simple-contrastive-learning-of-sentence-embeddings-823255cd-bd1f-40ec-a65c-0eced7a9191d`,
     text: `Reading group material. Discuss SimCSE, which is a very simple but effective State-of-the-Art sentence embedding method using a pre-trained language model and contrastive learning.`,
   },
