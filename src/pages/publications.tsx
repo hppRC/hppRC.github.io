@@ -3,7 +3,7 @@ import { ResourcesSection } from "src/components";
 const Publications: ReadonlyArray<Resource> = [
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
-    period: `*SEM 2022`,
+    period: `*SEM 2022\nlong paper`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://arxiv.org/abs/2202.02990`,
     additionalHtml: `We have recently seen many successful applications of sentence embedding methods.

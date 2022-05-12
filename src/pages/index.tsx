@@ -98,6 +98,11 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `輪読会主催: MLPシリーズ 深層学習 改訂第2版`,
+    period: `April 2022 -`,
+    text: `Study group organizer.`,
+  },
+  {
     title: `[輪講資料] SimCSE: Simple Contrastive Learning of Sentence Embeddings`,
     period: `February 2022`,
     relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-simcse-simple-contrastive-learning-of-sentence-embeddings-823255cd-bd1f-40ec-a65c-0eced7a9191d`,
