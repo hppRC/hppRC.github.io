@@ -109,6 +109,12 @@ const activitiesResources: ReadonlyArray<Resource> = [
     text: `Reading group material. Discuss SimCSE, which is a very simple but effective State-of-the-Art sentence embedding method using a pre-trained language model and contrastive learning.`,
   },
   {
+    title: `人工知能学会 言語・音声理解と対話処理研究会(SLUD) 第93回研究会 「第12回対話システムシンポジウム」 国際会議報告(ACL-IJCNLP)`,
+    period: `November 2021`,
+    relatedLink: `https://github.com/jsai-slud/sig-slud/blob/bb874324f3dbb2f309d46ec321ef977f37f23a92/material/93th/conference_report_2021.pdf`,
+    text: `Introduction to ACL.`,
+  },
+  {
     title: `ログデータと言語モデルを用いた同義語辞書の自動構築`,
     period: `May 2021 - August 2021`,
     relatedLink: `https://engineering.mercari.com/blog/entry/20220210-eab9f5d823/`,
