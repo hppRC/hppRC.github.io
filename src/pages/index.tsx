@@ -207,13 +207,13 @@ const Component: React.FCX = function () {
       </section>
       <ResourcesSection title="Education" resources={educationResources} bold />
       <ResourcesSection
-        title="Internships / Employments"
-        resources={internsihpsEmploymentsResources}
+        title="Publications"
+        resources={publicationsResources}
         bold
       />
       <ResourcesSection
-        title="Publications"
-        resources={publicationsResources}
+        title="Internships / Employments"
+        resources={internsihpsEmploymentsResources}
         bold
       />
       <ResourcesSection
