@@ -9,7 +9,7 @@ interface CustomDocumentInterface {
 class CustomDocument extends Document implements CustomDocumentInterface {
   url = `https://hpprc.dev`;
 
-  title = `Hayato Tsukagoshi Profile Page`;
+  title = `Hayato Tsukagoshi (塚越駿) Profile Page`;
 
   description = `The proflie pages of Hayato Tsukagoshi. Please contact me if you have any questions.`;
 
