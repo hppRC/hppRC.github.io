@@ -16,7 +16,7 @@ const App = function ({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Hayato Tsukagoshi</title>
+        <title>Hayato Tsukagoshi | 塚越駿</title>
       </Head>
       <Layout>
         <Component {...pageProps} />
