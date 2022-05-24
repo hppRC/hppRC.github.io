@@ -98,6 +98,12 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `[輪講資料] Language-agnostic BERT Sentence Embedding`,
+    period: `May 2022`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-language-agnostic-bert-sentence-embedding`,
+    text: `Reading group material. Discuss LaBSE, which is a effective multilingual sentence embedding model.`,
+  },
+  {
     title: `輪読会主催: MLPシリーズ 深層学習 改訂第2版`,
     period: `April 2022 -`,
     text: `Study group organizer.`,
