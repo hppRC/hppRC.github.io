@@ -198,7 +198,7 @@ const Component: React.FCX = function () {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <p>Graduate School of Informatics, Nagoya University, M2</p>
+          <p>M2, Graduate School of Informatics, Nagoya University, Japan</p>
           <ExternalLink href="http://cr.fvcrc.i.nagoya-u.ac.jp/">
             Takeda-Sasano Lab.
           </ExternalLink>
