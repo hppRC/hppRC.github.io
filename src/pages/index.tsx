@@ -202,7 +202,9 @@ const Component: React.FCX = function () {
           <ExternalLink href="http://cr.fvcrc.i.nagoya-u.ac.jp/">
             Takeda-Sasano Lab.
           </ExternalLink>
-          <p>Email: tsukagoshi.hayato[at]gmail.com</p>
+          <p>Main Email: tsukagoshi.hayato[at]gmail.com</p>
+          <p>Resaerch Email: research.tsukagoshi.hayato[at]gmail.com</p>
+          <p>University Email: tsukagoshi.hayato.r2[at]s.mail.nagoya-u.ac.jp</p>
           <ExternalLink
             href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
             className="text-base"
