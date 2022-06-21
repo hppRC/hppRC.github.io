@@ -203,7 +203,7 @@ const Component: React.FCX = function () {
             Takeda-Sasano Lab.
           </ExternalLink>
           <p>Main Email: tsukagoshi.hayato[at]gmail.com</p>
-          <p>Resaerch Email: research.tsukagoshi.hayato[at]gmail.com</p>
+          <p>Research Email: research.tsukagoshi.hayato[at]gmail.com</p>
           <ExternalLink
             href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
             className="text-base"
