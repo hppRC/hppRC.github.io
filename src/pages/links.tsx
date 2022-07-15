@@ -2,7 +2,10 @@ import { ExternalLink } from "src/components";
 
 const sorcialLinks = {
   GitHub: { name: `hppRC`, href: `https://github.com/hppRC` },
-  LinkedIn: { name: `Hayato Tsukagoshi`, href: `https://www.linkedin.com/in/hpprc/` },
+  LinkedIn: {
+    name: `Hayato Tsukagoshi`,
+    href: `https://www.linkedin.com/in/hpprc/`,
+  },
   Twitter: { name: `@hpp_ricecake`, href: `https://twitter.com/hpp_ricecake` },
   "Twitter (for research)": {
     name: `@hayato_tkgs`,
