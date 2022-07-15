@@ -3,9 +3,9 @@ import { ResourcesSection } from "src/components";
 const Publications: ReadonlyArray<Resource> = [
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
-    period: `*SEM 2022\nlong paper`,
+    period: `*SEM 2022\nlong paper\nacceptance rate: 61.5%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
-    relatedLink: `https://arxiv.org/abs/2202.02990`,
+    relatedLink: `https://aclanthology.org/2022.starsem-1.12/`,
     additionalHtml: `We have recently seen many successful applications of sentence embedding methods.
 It has not been well understood, however, what kind of properties are captured in the resulting sentence embeddings, depending on the supervision signals.
 In this paper, we focus on two types of sentence embeddings obtained by using natural language inference (NLI) datasets and definition sentences from a word dictionary and investigate their properties by comparing their performance with the semantic textual similarity (STS) task using the STS data partitioned by two perspectives:
