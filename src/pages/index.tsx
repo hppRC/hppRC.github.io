@@ -72,9 +72,9 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
-    period: `*SEM 2022`,
+    period: `*SEM 2022\nacceptance rate: 61.5%`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
-    relatedLink: `https://arxiv.org/abs/2202.02990`,
+    relatedLink: `https://aclanthology.org/2022.starsem-1.12/`,
   },
   {
     title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
