@@ -8,7 +8,17 @@
     "font-family-no-duplicate-names": true,
     "font-family-no-missing-generic-family-keyword": true
   },
-  "extends": ["stylelint-config-recommended", "stylelint-config-styled-components", "stylelint-config-recess-order"],
-  "plugins": ["stylelint-order"],
-  "ignoreFiles": ["**/node_modules/**", ".next/**", "src/styled/tailwind.css"]
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "ignoreFiles": [
+    "**/node_modules/**",
+    ".next/**",
+    "src/styled/tailwind.css"
+  ]
 }

@@ -26,12 +26,12 @@ class CustomDocument extends Document implements CustomDocumentInterface {
           <meta property="og:url" content={this.url} />
           <meta property="og:description" content={this.description} />
           <meta property="og:site_name" content={this.title} />
-          <meta property="og:image" content={`${this.url}/images/ogp.png`} />
+          <meta property="og:image" content={`${this.url}/images/ogp.jpg`} />
           <meta name="format-detection" content="telephone=no" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={this.title} />
           <meta name="twitter:description" content={this.description} />
-          <meta name="twitter:image" content={`${this.url}/images/ogp.png`} />
+          <meta name="twitter:image" content={`${this.url}/images/ogp.jpg`} />
 
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#ffffff" />
