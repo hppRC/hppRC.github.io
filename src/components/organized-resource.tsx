@@ -11,13 +11,13 @@ export const OrganizedResource: React.FCX<InnerProps> = function ({
   bold,
 }) {
   return (
-    <li className="my-4 lg:my-4 flex flex-col lg:flex-row">
-      <p className="whitespace-pre-wrap leading-tight lg:leading-snug text-xs lg:text-sm lg:w-1/3 text-gray-700 ">
+    <li className="my-4 flex flex-col lg:my-4 lg:flex-row">
+      <p className="whitespace-pre-wrap text-xs leading-tight text-gray-700 lg:w-1/3 lg:text-sm lg:leading-snug ">
         {period}
       </p>
       <div className="lg:w-2/3">
         <h3
-          className={`whitespace-pre-wrap leading-tight lg:leading-snug text-sm lg:text-base ${
+          className={`whitespace-pre-wrap text-sm leading-tight lg:text-base lg:leading-snug ${
             bold && `font-bold`
           }`}
         >
@@ -27,12 +27,12 @@ export const OrganizedResource: React.FCX<InnerProps> = function ({
             <span>{title}</span>
           )}
         </h3>
-        <p className="whitespace-pre-wrap leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700">
+        <p className="whitespace-pre-wrap text-xs leading-tight text-gray-700 lg:text-sm lg:leading-snug">
           {text}
         </p>
         {additionalHtml && (
           <div
-            className="my-2 leading-tight lg:leading-snug text-xs lg:text-sm text-gray-700"
+            className="my-2 text-xs leading-tight text-gray-700 lg:text-sm lg:leading-snug"
             dangerouslySetInnerHTML={{
               __html: additionalHtml,
             }}

@@ -51,7 +51,7 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Publications</h2>
+        <h2 className="-ml-2 text-2xl font-bold lg:text-4xl">Publications</h2>
       </section>
       <ResourcesSection title="" resources={Publications} bold />
     </>

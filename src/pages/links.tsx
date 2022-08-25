@@ -149,16 +149,16 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Links</h2>
+        <h2 className="-ml-2 text-2xl font-bold lg:text-4xl">Links</h2>
       </section>
-      <div className="my-4 lg:my-8 flex flex-col lg:flex-row">
+      <div className="my-4 flex flex-col lg:my-8 lg:flex-row">
         <section className="lg:w-1/2">
-          <h2 className="font-bold text-xl lg:text-2xl mb-2">Social</h2>
+          <h2 className="mb-2 text-xl font-bold lg:text-2xl">Social</h2>
           <ul className="p-2">
             {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
               <li
                 key={key}
-                className="leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base"
+                className="mb-1 flex text-sm leading-tight lg:my-1 lg:text-base lg:leading-snug"
                 id={`social-${key}`}
               >
                 <p className="block w-1/3">{key}</p>
@@ -172,12 +172,12 @@ const Component: React.FCX = function () {
           </ul>
         </section>
         <section className="lg:w-1/2">
-          <h2 className="font-bold text-xl lg:text-2xl mb-2">Website</h2>
+          <h2 className="mb-2 text-xl font-bold lg:text-2xl">Website</h2>
           <ul className="p-2">
             {Object.entries(websiteLinks).map(([key, { href }]) => (
               <li
                 key={key}
-                className="leading-tight lg:leading-snug mb-1 lg:my-1 flex text-sm lg:text-base"
+                className="mb-1 flex text-sm leading-tight lg:my-1 lg:text-base lg:leading-snug"
                 id={`website-${key}`}
               >
                 <p className="block w-1/3">{key}</p>
@@ -190,28 +190,28 @@ const Component: React.FCX = function () {
         </section>
       </div>
       <section className="my-4 lg:my-16">
-        <h2 className="font-bold text-xl lg:text-2xl">Miscellaneousness</h2>
+        <h2 className="text-xl font-bold lg:text-2xl">Miscellaneousness</h2>
         <ul>
           {Object.entries(miscellaneousness).map(([field, resources]) => (
             <li key={field}>
               <section className="my-4 lg:my-12">
-                <h3 className="lg:text-xl font-semibold">{field}</h3>
+                <h3 className="font-semibold lg:text-xl">{field}</h3>
                 <ul className="my-2">
                   {Object.entries(resources).map(([key, data]) => (
                     <li
                       key={key}
-                      className="my-2 lg:my-4 lg:flex py-1 border-t w-full"
+                      className="my-2 w-full border-t py-1 lg:my-4 lg:flex"
                       id={`misc-${field}-${key}`}
                     >
-                      <h4 className="lg:w-1/3 pr-4 truncate">{key}</h4>
-                      <ul className="text-sm lg:text-base flex flex-col p-1 lg:w-2/3">
+                      <h4 className="truncate pr-4 lg:w-1/3">{key}</h4>
+                      <ul className="flex flex-col p-1 text-sm lg:w-2/3 lg:text-base">
                         {data.map(({ title, href, name }) => (
                           <li key={title + href}>
                             <ExternalLink
                               href={href}
-                              className="flex text-sm lg:text-base lg:mb-1"
+                              className="flex text-sm lg:mb-1 lg:text-base"
                             >
-                              <p className="mr-2 lg:mr-4 truncate">
+                              <p className="mr-2 truncate lg:mr-4">
                                 {name ? `${title} :` : title}
                               </p>
                               {name && <p className="truncate">{name}</p>}

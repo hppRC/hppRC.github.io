@@ -14,7 +14,7 @@ export const ResourcesSection: React.FCX<Props> = function ({
 }) {
   return (
     <section className={`my-8 lg:my-16 ${className}`}>
-      <h2 className="font-bold text-xl lg:text-2xl">{title}</h2>
+      <h2 className="text-xl font-bold lg:text-2xl">{title}</h2>
       <OrganizedResources resources={resources} bold={bold} />
     </section>
   );

@@ -48,6 +48,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-tailwindcss": "^3.6.0",
     "imagemin-mozjpeg": "8.x",
     "imagemin-svgo": "8.x",
     "next-transpile-modules": "^9.0.0",

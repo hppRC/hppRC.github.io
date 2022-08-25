@@ -7,9 +7,9 @@ const Component: React.FCX<{ children?: React.ReactNode }> = function ({
   children,
 }) {
   return (
-    <div className="flex flex-col min-h-screen pointer-events-none">
+    <div className="pointer-events-none flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1 max-w-screen-xl w-full mx-auto pointer-events-auto p-4 pt-12 sm:p-12 lg:p-20 xl:p-24">
+      <main className="pointer-events-auto mx-auto w-full max-w-screen-xl flex-1 p-4 pt-12 sm:p-12 lg:p-20 xl:p-24">
         {children}
       </main>
       <Footer />

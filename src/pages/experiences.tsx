@@ -72,31 +72,31 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h2 className="-ml-2 font-bold text-2xl lg:text-4xl">Experiences</h2>
+        <h2 className="-ml-2 text-2xl font-bold lg:text-4xl">Experiences</h2>
       </section>
       <ResourcesSection title="Events" resources={eventsResources} />
       <ResourcesSection title="Conference / LT" resources={confLTResources} />
       <section className="my-4 lg:my-8">
-        <h2 className="font-bold text-xl lg:text-2xl">Skills</h2>
+        <h2 className="text-xl font-bold lg:text-2xl">Skills</h2>
         <ul>
           {Object.entries(skillsResources).map(([field, resources]) => (
             <li key={field}>
               <section className="my-4 lg:my-12">
-                <h3 className="lg:text-xl font-semibold">{field}</h3>
+                <h3 className="font-semibold lg:text-xl">{field}</h3>
                 <ul>
                   {Object.entries(resources).map(([key, data]) => (
                     <li
                       key={key}
-                      className="my-2 lg:my-4 lg:flex py-1 border-t w-full"
+                      className="my-2 w-full border-t py-1 lg:my-4 lg:flex"
                       id={`misc-${field}-${key}`}
                     >
-                      <h4 className="text-xs lg:text-base lg:w-1/3 text-gray-700">
+                      <h4 className="text-xs text-gray-700 lg:w-1/3 lg:text-base">
                         {key}
                       </h4>
-                      <ul className="text-sm lg:text-base flex flex-wrap lg:w-2/3">
+                      <ul className="flex flex-wrap text-sm lg:w-2/3 lg:text-base">
                         {data?.map((name) => (
                           <li key={field + key + name}>
-                            <p className="text-sm lg:text-base mr-2 lg:mr-5">
+                            <p className="mr-2 text-sm lg:mr-5 lg:text-base">
                               {name}
                             </p>
                           </li>

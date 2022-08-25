@@ -187,29 +187,39 @@ const certificatesResources: ReadonlyArray<Resource> = [
 const Component: React.FCX = function () {
   return (
     <>
-      <section className="my-4 text-sm lg:text-base flex ml-4 lg:ml-0 items-center">
-        <div className="h-32 w-32 mr-4 lg:mr-8">
-          <img
-            src="/images/icon.png"
-            width={128}
-            height={128}
-            className="h-auto w-auto rounded-full"
-            alt="Hayato Tsukagoshi icon"
-          />
-        </div>
-        <div className="flex flex-col justify-center">
-          <p>M2, Graduate School of Informatics, Nagoya University, Japan</p>
-          <ExternalLink href="http://cr.fvcrc.i.nagoya-u.ac.jp/">
-            Takeda-Sasano Lab.
-          </ExternalLink>
-          <p>Main Email: tsukagoshi.hayato[at]gmail.com</p>
-          <p>Research Email: research.tsukagoshi.hayato[at]gmail.com</p>
-          <ExternalLink
-            href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
-            className="text-base"
-          >
-            resume
-          </ExternalLink>
+      <section className="my-4 ml-4 flex items-center text-sm lg:ml-0 lg:text-base">
+        <div className="mx-auto flex flex-col md:flex-row md:space-x-16">
+          <div className="flex items-center justify-center pb-4 md:pb-0">
+            <img
+              src="/images/icon.jpg"
+              width={256}
+              height={256}
+              className="h-36 w-36 rounded-full"
+              alt="Hayato Tsukagoshi icon"
+            />
+          </div>
+          <div className="mt-auto flex flex-col">
+            <p>
+              M2, Graduate School of Informatics, Nagoya University, Japan.
+              {`  `}
+              <ExternalLink
+                href="http://cr.fvcrc.i.nagoya-u.ac.jp/"
+                className="inline-block"
+              >
+                Takeda-Sasano Lab.
+              </ExternalLink>
+            </p>
+            <p className="">Main: tsukagoshi.hayato[at]gmail.com</p>
+            <p className="">
+              Research: research.tsukagoshi.hayato[at]gmail.com
+            </p>
+            <ExternalLink
+              href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
+              className="inline-block text-base"
+            >
+              resume
+            </ExternalLink>
+          </div>
         </div>
       </section>
       <ResourcesSection title="Education" resources={educationResources} bold />

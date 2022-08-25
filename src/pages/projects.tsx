@@ -31,10 +31,10 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h1 className="-ml-2 font-bold text-2xl lg:text-4xl">Projects</h1>
+        <h1 className="-ml-2 text-2xl font-bold lg:text-4xl">Projects</h1>
       </section>
       <section className="my-4 lg:my-16">
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+        <ul className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {data.map((attrs) => (
             <li className="mx-2 my-4 lg:my-0" key={attrs.title}>
               <ProjectCard {...attrs} />

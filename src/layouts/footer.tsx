@@ -3,21 +3,24 @@ import { ExternalLink } from "src/components";
 
 export const Footer: React.FC = function () {
   return (
-    <footer className="flex items-center justify-center w-full text-center border-t border-grey p-4 pin-b pointer-events-auto text-sm lg:text-base">
+    <footer className="pointer-events-auto flex w-full items-center justify-center border-t p-4 text-center text-sm lg:text-base">
       <div>
-        Copyright©2022. Developed and Designed by
+        <div className="flex items-center justify-center">
+          Copyright©2022.
+          <ExternalLink
+            href="https://github.com/hppRC"
+            className="inline-block pl-1"
+          >
+            <i className="flex items-center justify-center">
+              <FaGithub size={18} className="inline-block text-gray-800" />
+            </i>
+          </ExternalLink>
+        </div>
+        Developed and Designed by
         <ExternalLink href="https://twitter.com/hpp_ricecake">
-          <>
-            {` `}
-            Hayato Tsukagoshi{` `}
-          </>
-        </ExternalLink>
-      </div>
-      <div>
-        <ExternalLink href="https://github.com/hppRC">
-          <i>
-            <FaGithub className="block h-10 ml-2 text-gray-800" />
-          </i>
+          {` `}
+          Hayato Tsukagoshi
+          {` `}
         </ExternalLink>
       </div>
     </footer>
