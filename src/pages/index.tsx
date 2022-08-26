@@ -187,8 +187,8 @@ const certificatesResources: ReadonlyArray<Resource> = [
 const Component: React.FCX = function () {
   return (
     <>
-      <section className="my-4 ml-4 flex items-center text-sm lg:ml-0 lg:text-base">
-        <div className="mx-auto flex flex-col md:flex-row md:space-x-16">
+      <section className="my-4 flex items-center text-sm lg:text-base">
+        <div className="mx-auto flex flex-col md:flex-row md:space-x-12 lg:md:space-x-20">
           <div className="flex items-center justify-center pb-4 md:pb-0">
             <img
               src="/images/icon.jpg"
@@ -198,21 +198,22 @@ const Component: React.FCX = function () {
               alt="Hayato Tsukagoshi icon"
             />
           </div>
-          <div className="mt-auto flex flex-col">
-            <p>
+          <div className="mx-auto flex flex-col justify-end space-y-2 p-2 md:pb-0">
+            <div>
               M2, Graduate School of Informatics, Nagoya University, Japan.
-              {`  `}
+              {` `}
+              <br className="hidden md:block" />
               <ExternalLink
                 href="http://cr.fvcrc.i.nagoya-u.ac.jp/"
                 className="inline-block"
               >
                 Takeda-Sasano Lab.
               </ExternalLink>
-            </p>
-            <p className="">Main: tsukagoshi.hayato[at]gmail.com</p>
-            <p className="">
-              Research: research.tsukagoshi.hayato[at]gmail.com
-            </p>
+            </div>
+            <div>
+              <p>Main: tsukagoshi.hayato[at]gmail.com</p>
+              <p>Research: research.tsukagoshi.hayato[at]gmail.com</p>
+            </div>
             <ExternalLink
               href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
               className="inline-block text-base"

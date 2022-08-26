@@ -149,10 +149,10 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h2 className="-ml-2 text-2xl font-bold lg:text-4xl">Links</h2>
+        <h2 className="text-2xl font-bold lg:text-4xl">Links</h2>
       </section>
-      <div className="my-4 flex flex-col lg:my-8 lg:flex-row">
-        <section className="lg:w-1/2">
+      <div className="my-4 flex flex-col space-y-8 lg:my-8 lg:flex-row">
+        <section className="my-4 lg:my-8 lg:w-1/2">
           <h2 className="mb-2 text-xl font-bold lg:text-2xl">Social</h2>
           <ul className="p-2">
             {Object.entries(sorcialLinks).map(([key, { name, href }]) => (
@@ -189,14 +189,14 @@ const Component: React.FCX = function () {
           </ul>
         </section>
       </div>
-      <section className="my-4 lg:my-16">
+      <section className="my-4 space-y-8 md:my-12 lg:my-16">
         <h2 className="text-xl font-bold lg:text-2xl">Miscellaneousness</h2>
         <ul>
           {Object.entries(miscellaneousness).map(([field, resources]) => (
             <li key={field}>
-              <section className="my-4 lg:my-12">
+              <section className="my-4 space-y-4 lg:my-12">
                 <h3 className="font-semibold lg:text-xl">{field}</h3>
-                <ul className="my-2">
+                <ul className="my-2 space-y-8">
                   {Object.entries(resources).map(([key, data]) => (
                     <li
                       key={key}

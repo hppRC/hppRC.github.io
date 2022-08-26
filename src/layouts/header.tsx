@@ -69,11 +69,12 @@ export const Header: React.FC = function () {
   const toggle = useCallback(() => {
     setOpen((open) => !open);
   }, []);
+
   return (
     <header className="pointer-events-auto fixed top-0 h-12 w-full border-b bg-white lg:h-16 lg:px-4">
       <nav className="mx-auto flex h-full max-w-screen-xl items-center justify-between bg-white">
         <div
-          className={`absolute h-full w-full border-b bg-white px-2 transition-transform duration-300 ease-in-out lg:px-0${
+          className={`absolute h-full w-full border-b bg-white px-2 transition-transform duration-300 ease-in-out lg:px-0 ${
             open ? `translate-y-full` : `-translate-y-full`
           }`}
           style={{ zIndex: -1 }}

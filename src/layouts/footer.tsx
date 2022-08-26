@@ -3,8 +3,8 @@ import { ExternalLink } from "src/components";
 
 export const Footer: React.FC = function () {
   return (
-    <footer className="pointer-events-auto flex w-full items-center justify-center border-t p-4 text-center text-sm lg:text-base">
-      <div>
+    <footer className="pointer-events-auto mt-16 flex w-full items-center justify-center border-t p-4 text-center md:text-sm">
+      <div className="text-xs">
         <div className="flex items-center justify-center">
           Copyright©2022.
           <ExternalLink

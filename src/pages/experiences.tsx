@@ -72,7 +72,7 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h2 className="-ml-2 text-2xl font-bold lg:text-4xl">Experiences</h2>
+        <h2 className="text-2xl font-bold lg:text-4xl">Experiences</h2>
       </section>
       <ResourcesSection title="Events" resources={eventsResources} />
       <ResourcesSection title="Conference / LT" resources={confLTResources} />

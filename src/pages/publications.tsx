@@ -3,7 +3,7 @@ import { ResourcesSection } from "src/components";
 const Publications: ReadonlyArray<Resource> = [
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
-    period: `*SEM 2022\nlong paper\nacceptance rate: 61.5%`,
+    period: `*SEM 2022, long paper, acceptance rate: 61.5%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2022.starsem-1.12/`,
     additionalHtml: `We have recently seen many successful applications of sentence embedding methods.
@@ -14,7 +14,7 @@ We also demonstrate that combining the two types of embeddings yields substantia
   },
   {
     title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
-    period: `言語処理学会第28回年次大会 (NLP2022)`,
+    period: `言語処理学会 第28回年次大会 (NLP2022)`,
     text: `塚越駿, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/D5-4.pdf`,
     additionalHtml: `複雑な文を同じ意味の単純な複数の文に分割するSplit and Rephraseタスクは，可読性の向上や機械的なテキスト処理の性能向上に有用である．
@@ -23,7 +23,7 @@ We also demonstrate that combining the two types of embeddings yields substantia
   },
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021 main conference\nshort paper\nacceptance rate: 21.3%`,
+    period: `ACL-IJCNLP 2021 main conference, short paper, acceptance rate: 21.3%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
     additionalHtml: `Sentence embedding methods using natural language inference (NLI) datasets have been successfully applied to various tasks.
@@ -35,8 +35,7 @@ Our code is publicly available at <a href="https://github.com/hpprc/defsent">htt
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
-    period: `言語処理学会
-第27回年次大会 (NLP2021)`,
+    period: `言語処理学会 第27回年次大会 (NLP2021)`,
     text: `塚越駿, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/C4-2.pdf`,
     additionalHtml: `近年，自然言語推論 (Natural Language Inference: NLI) データセットを用いて文埋め込みを構成する手法が成功を収めており，文類似度 (Semantic Textual Similarity: STS) タスクをはじめとする様々なタスクで活用されている．
@@ -51,7 +50,7 @@ const Component: React.FCX = function () {
   return (
     <>
       <section className="my-4">
-        <h2 className="-ml-2 text-2xl font-bold lg:text-4xl">Publications</h2>
+        <h2 className="text-2xl font-bold lg:text-4xl">Publications</h2>
       </section>
       <ResourcesSection title="" resources={Publications} bold />
     </>

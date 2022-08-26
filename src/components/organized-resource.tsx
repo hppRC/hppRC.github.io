@@ -54,7 +54,7 @@ export const OrganizedResources: React.FCX<Props> = function ({
   bold,
 }) {
   return (
-    <ul className={`p-2 lg:p-4 ${className}`}>
+    <ul className={`p-2 lg:p-4 ${className} space-y-8`}>
       {resources.map((resource) => (
         <OrganizedResource
           resource={resource}
