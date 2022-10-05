@@ -142,8 +142,8 @@ const activitiesResources: ReadonlyArray<Resource> = [
 
 const awardsHonorsResources: ReadonlyArray<Resource> = [
   {
-    title: `Japan Society for Promotion of Science (JSPS) Research Fellowship for Young Scientists (DC2) [link]`,
-    period: `April 2023 - March 2026`,
+    title: `Japan Society for Promotion of Science (JSPS) Research Fellowship for Young Scientists (DC1)`,
+    period: `April 2023 - March 2027`,
     text: `200,000 yen / month + 1,000,000 yen / year`,
   },
   {
