@@ -3,7 +3,7 @@ import { ResourcesSection } from "src/components";
 const Publications: ReadonlyArray<Resource> = [
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
-    period: `*SEM 2022, long paper, acceptance rate: 61.5%`,
+    period: `*SEM 2022, long paper\nacceptance rate: 61.5%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2022.starsem-1.12/`,
     additionalHtml: `We have recently seen many successful applications of sentence embedding methods.
@@ -23,7 +23,7 @@ We also demonstrate that combining the two types of embeddings yields substantia
   },
   {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
-    period: `ACL-IJCNLP 2021 main conference, short paper, acceptance rate: 21.3%`,
+    period: `ACL-IJCNLP 2021 main conference, short paper\nacceptance rate: 21.3%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
     additionalHtml: `Sentence embedding methods using natural language inference (NLI) datasets have been successfully applied to various tasks.

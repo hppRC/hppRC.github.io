@@ -17,7 +17,7 @@ const Tab: React.FCX<Props> = function ({ name, href, className, onClick }) {
     <li
       className={`${className} text-sm transition-opacity duration-100 ease-in-out hover:opacity-50 lg:text-base`}
     >
-      <Link href={href} passHref>
+      <Link href={href} passHref legacyBehavior>
         <button
           type="button"
           className={`${isActive ? activeClassName : inActiveClassName}`}
@@ -82,7 +82,7 @@ export const Header: React.FC = function () {
           <TabList className="flex" onClick={toggle} />
         </div>
         <div className="mx-2 lg:mx-0">
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <h1 className="cursor-pointer text-2xl font-bold lg:text-4xl">
               Hayato Tsukagoshi
             </h1>
