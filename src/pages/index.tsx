@@ -98,6 +98,12 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `[輪講資料] Optimus: Organizing Sentences via Pre-trained Modeling of a Latent Space`,
+    period: `October 2022`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-optimus-organizing-sentences-via-pre-trained-modeling-of-a-latent-space`,
+    text: `Reading group material. Discuss Optimus, which is a pre-trained VAE-based language model.`,
+  },
+  {
     title: `[輪講資料] Language-agnostic BERT Sentence Embedding`,
     period: `May 2022`,
     relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-language-agnostic-bert-sentence-embedding`,
