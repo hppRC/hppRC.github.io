@@ -98,6 +98,12 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `単語を箱で表現！新たな埋め込み手法 Box Embedding を基礎から理解`,
+    period: `October 2022`,
+    relatedLink: `https://ja.stateofaiguides.com/20221013-box-embeddings/`,
+    text: `Article for State of AI Guides. Discuss Box Embedding, which represents words using a box instead of a vector.`,
+  },
+  {
     title: `[輪講資料] Optimus: Organizing Sentences via Pre-trained Modeling of a Latent Space`,
     period: `October 2022`,
     relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-optimus-organizing-sentences-via-pre-trained-modeling-of-a-latent-space`,
