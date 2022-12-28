@@ -2,6 +2,12 @@ import { ResourcesSection } from "src/components";
 
 const Publications: ReadonlyArray<Resource> = [
   {
+    title: `定義文を用いた文埋め込み構成法`,
+    period: `自然言語処理 Vol.30 No.1 (発行予定)`,
+    text: `塚越駿, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/guide/saitaku.html`,
+  },
+  {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
     period: `*SEM 2022, long paper\nacceptance rate: 61.5%`,
     text: `Hayato Tsukagoshi, Ryohei Sasano, Koichi Takeda`,
