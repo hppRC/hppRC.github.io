@@ -104,10 +104,16 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `歪んだ空間の使い方: 双曲埋め込み＋深層学習の主要研究まとめと最新動向`,
+    period: `December 2022`,
+    relatedLink: `https://ja.stateofaiguides.com/20221227-hyperbolic-embeddings/`,
+    text: `Article for State of AI Guides. Discuss Hyperbolic Embeddings, which embed words in a hyperbolic space instead of a Euclidean space.`,
+  },
+  {
     title: `単語を箱で表現！新たな埋め込み手法 Box Embedding を基礎から理解`,
     period: `October 2022`,
     relatedLink: `https://ja.stateofaiguides.com/20221013-box-embeddings/`,
-    text: `Article for State of AI Guides. Discuss Box Embedding, which represents words using a box instead of a vector.`,
+    text: `Article for State of AI Guides. Discuss Box Embeddings, which represent words using a box instead of a vector.`,
   },
   {
     title: `[輪講資料] Optimus: Organizing Sentences via Pre-trained Modeling of a Latent Space`,
