@@ -249,6 +249,24 @@ const Component: React.FCX = function () {
             >
               resume
             </ExternalLink>
+            <ExternalLink
+              href="https://twitter.com/hayato_tkgs"
+              className="inline-block text-base"
+            >
+              Twitter
+            </ExternalLink>
+            <ExternalLink
+              href="https://scholar.google.co.jp/citations?user=3xeQ7VYAAAAJ"
+              className="inline-block text-base"
+            >
+              Google Scholar
+            </ExternalLink>
+            <ExternalLink
+              href="https://www.semanticscholar.org/author/Hayato-Tsukagoshi/2090616568"
+              className="inline-block text-base"
+            >
+              Semantic Scholar
+            </ExternalLink>
           </div>
         </div>
       </section>
