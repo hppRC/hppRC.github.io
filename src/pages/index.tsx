@@ -104,6 +104,12 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `BERT Classification Tutorial (BERTによるテキスト分類)`,
+    period: `January 2023`,
+    relatedLink: `https://github.com/hppRC/bert-classification-tutorial`,
+    text: `A tutorial, reference implementation of text classification using BERT in 2023`,
+  },
+  {
     title: `歪んだ空間の使い方: 双曲埋め込み＋深層学習の主要研究まとめと最新動向`,
     period: `December 2022`,
     relatedLink: `https://ja.stateofaiguides.com/20221227-hyperbolic-embeddings/`,
@@ -120,6 +126,12 @@ const activitiesResources: ReadonlyArray<Resource> = [
     period: `October 2022`,
     relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-optimus-organizing-sentences-via-pre-trained-modeling-of-a-latent-space`,
     text: `Reading group material. Discuss Optimus, which is a pre-trained VAE-based language model.`,
+  },
+  {
+    title: `Simple-SimCSE`,
+    period: `October 2022`,
+    relatedLink: `https://github.com/hppRC/simple-simcse`,
+    text: `An easy-to-read, easy-to-use implementation of SimCSE, which is a simple contrastive sentence embedding method.`,
   },
   {
     title: `[輪講資料] Language-agnostic BERT Sentence Embedding`,
