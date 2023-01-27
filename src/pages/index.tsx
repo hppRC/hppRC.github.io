@@ -262,6 +262,12 @@ const Component: React.FCX = function () {
               resume
             </ExternalLink>
             <ExternalLink
+              href="https://docs.google.com/document/d/1A5q5OJY0BvCIGuQHQCh5b_uiRGAXh59QKeJyFiIb600/edit?usp=sharing"
+              className="inline-block text-base"
+            >
+              CV (Japanese)
+            </ExternalLink>
+            <ExternalLink
               href="https://twitter.com/hayato_tkgs"
               className="inline-block text-base"
             >
