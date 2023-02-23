@@ -104,6 +104,12 @@ const publicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `次世代のトランスフォーマーを目指して: 状態空間モデル S4 の発展`,
+    period: `Feburary 2023`,
+    relatedLink: `https://ja.stateofaiguides.com/20230218-s4-successor/`,
+    text: `Discuss S4 sucsessors.`,
+  },
+  {
     title: `BERT Classification Tutorial (BERTによるテキスト分類)`,
     period: `January 2023`,
     relatedLink: `https://github.com/hppRC/bert-classification-tutorial`,
