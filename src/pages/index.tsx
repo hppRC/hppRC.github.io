@@ -81,6 +81,12 @@ const publicationsResources: ReadonlyArray<Resource> = [
     relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/1/30_125/_pdf/-char/ja`,
   },
   {
+    title: `ガウス埋め込みに基づく文表現生成`,
+    period: `言語処理学会第29回年次大会 (NLP2023)`,
+    additionalHtml: `陽田翔平 (若手奨励賞), <u>塚越駿</u>, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C4-4.pdf`,
+  },
+  {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
     period: `*SEM 2022\nacceptance rate: 61.5%`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
