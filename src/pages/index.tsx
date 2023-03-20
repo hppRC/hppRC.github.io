@@ -2,8 +2,12 @@ import { ExternalLink, ResourcesSection } from "src/components";
 
 const educationResources: ReadonlyArray<Resource> = [
   {
+    title: `Doctor's degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
+    period: `April 2023 - `,
+  },
+  {
     title: `Master's degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
-    period: `April 2021 - expected March 2023`,
+    period: `April 2021 - March 2023`,
   },
   {
     title: `Bachelor's degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
@@ -72,9 +76,9 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 const publicationsResources: ReadonlyArray<Resource> = [
   {
     title: `定義文を用いた文埋め込み構成法`,
-    period: `自然言語処理 Vol.30 No.1 (発行予定)`,
+    period: `自然言語処理 Vol.30 No.1`,
     additionalHtml: `<u>塚越駿</u>, 笹野遼平, 武田浩一`,
-    relatedLink: `https://www.anlp.jp/guide/saitaku.html`,
+    relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/1/30_125/_pdf/-char/ja`,
   },
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
@@ -103,6 +107,18 @@ const publicationsResources: ReadonlyArray<Resource> = [
 ];
 
 const activitiesResources: ReadonlyArray<Resource> = [
+  {
+    title: `資源として見る実験プログラム`,
+    period: `March 2023`,
+    relatedLink: `https://speakerdeck.com/hpprc/zi-yuan-tositejian-rushi-yan-puroguramu`,
+    text: `Oral presentation at JLR2023, which is a workshop of the 29th Annual Meeting of the Association for Natural Language Processing.`,
+  },
+  {
+    title: `埋め込みで論理演算！データを確率分布で表す確率埋め込みの最前線`,
+    period: `March 2023`,
+    relatedLink: `https://ja.stateofaiguides.com/20230313-probabilistic-embeddings/`,
+    text: `Discuss probabilistic embeddings.`,
+  },
   {
     title: `次世代のトランスフォーマーを目指して: 状態空間モデル S4 の発展`,
     period: `Feburary 2023`,
