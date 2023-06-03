@@ -284,7 +284,7 @@ const Component: React.FCX = function () {
               <p>Research: research.tsukagoshi.hayato[at]gmail.com</p>
             </div>
             <ExternalLink
-              href="https://docs.google.com/document/d/1dWmyBGOjD9GF-WaYM5GlPg3uXxbSw9H5GDQeSL9BRq4/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1qvzatUKi2lxxkYgx5s3yCWRabX6pVKTctLlRIwGj5qo/edit?usp=sharing"
               className="inline-block text-base"
             >
               resume
