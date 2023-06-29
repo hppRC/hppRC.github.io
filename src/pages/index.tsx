@@ -22,8 +22,13 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
+    title: `Writer for State of AI Guides`,
+    period: `October 2022 - March 2023`,
+    relatedLink: `https://ja.stateofaiguides.com/author/tsukagoshi/`,
+  },
+  {
     title: `Research Assistant of Moonshot R&D project "Observation and interpretation AI based on prior knowledge"`,
-    period: `June 2021 - March 2023`,
+    period: `June 2021 - March 2024`,
     text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
   },
   {
@@ -49,7 +54,6 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
     title: `Writer for AI-SCHOLAR`,
     period: `June 2020 - present`,
-    text: `Wrote articles about Natural Language Processing`,
   },
   {
     title: `Server-side Engineering Internship at CyberAgent Inc.`,
@@ -74,6 +78,12 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 ];
 
 const publicationsResources: ReadonlyArray<Resource> = [
+  {
+    title: `論文テキストを用いた化合物探索の漸進的効率化`,
+    period: `第256回 自然言語処理研究発表会`,
+    additionalHtml: `<u>塚越駿</u>, 岩田 和樹, 花田 博幸, 笹野 遼平, 竹内 一郎, 魚住 信之, 有澤 美枝子`,
+    relatedLink: `https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=226105&item_no=1&page_id=13&block_id=8`,
+  },
   {
     title: `定義文を用いた文埋め込み構成法`,
     period: `自然言語処理 Vol.30 No.1`,
@@ -113,6 +123,11 @@ const publicationsResources: ReadonlyArray<Resource> = [
 ];
 
 const activitiesResources: ReadonlyArray<Resource> = [
+  {
+    title: `BERTによるテキスト分類チュートリアル`,
+    period: `May 2023`,
+    relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/2/30_867/_article/-char/ja`,
+  },
   {
     title: `資源として見る実験プログラム`,
     period: `March 2023`,
