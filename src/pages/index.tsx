@@ -22,7 +22,7 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
-    title: `Writer for State of AI Guides`,
+    title: `Writer for State of AI Guide`,
     period: `October 2022 - March 2023`,
     relatedLink: `https://ja.stateofaiguides.com/author/tsukagoshi/`,
   },
