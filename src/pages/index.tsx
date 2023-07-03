@@ -129,6 +129,11 @@ const activitiesResources: ReadonlyArray<Resource> = [
     relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/2/30_867/_article/-char/ja`,
   },
   {
+    title: `NLP Dの会 幹事`,
+    period: `April 2023 - present`,
+    relatedLink: `https://sites.google.com/view/nlp-phd`,
+  },
+  {
     title: `資源として見る実験プログラム`,
     period: `March 2023`,
     relatedLink: `https://speakerdeck.com/hpprc/zi-yuan-tositejian-rushi-yan-puroguramu`,
