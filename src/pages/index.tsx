@@ -22,6 +22,11 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
+    title: `Internship / Part-time Employee at Preferred Networks, Inc.`,
+    period: `July 2023 - present`,
+    text: `Research Engineer`,
+  },
+  {
     title: `Writer for State of AI Guide`,
     period: `October 2022 - March 2023`,
     relatedLink: `https://ja.stateofaiguides.com/author/tsukagoshi/`,
@@ -53,7 +58,7 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   },
   {
     title: `Writer for AI-SCHOLAR`,
-    period: `June 2020 - present`,
+    period: `June 2020 - June 2021`,
   },
   {
     title: `Server-side Engineering Internship at CyberAgent Inc.`,
