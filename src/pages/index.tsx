@@ -87,24 +87,12 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   },
 ];
 
-const publicationsResources: ReadonlyArray<Resource> = [
-  {
-    title: `論文テキストを用いた化合物探索の漸進的効率化`,
-    period: `第256回 自然言語処理研究発表会`,
-    additionalHtml: `<u>塚越駿</u>, 岩田 和樹, 花田 博幸, 笹野 遼平, 竹内 一郎, 魚住 信之, 有澤 美枝子`,
-    relatedLink: `https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=226105&item_no=1&page_id=13&block_id=8`,
-  },
+const refereedPublicationsResources: ReadonlyArray<Resource> = [
   {
     title: `定義文を用いた文埋め込み構成法`,
     period: `自然言語処理 Vol.30 No.1`,
     additionalHtml: `<u>塚越駿</u>, 笹野遼平, 武田浩一`,
     relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/1/30_125/_pdf/-char/ja`,
-  },
-  {
-    title: `ガウス埋め込みに基づく文表現生成`,
-    period: `言語処理学会第29回年次大会 (NLP2023)`,
-    additionalHtml: `陽田翔平 (若手奨励賞), <u>塚越駿</u>, 笹野遼平, 武田浩一`,
-    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C4-4.pdf`,
   },
   {
     title: `Comparison and Combination of Sentence Embeddings\nDerived from Different Supervision Signals`,
@@ -113,16 +101,37 @@ const publicationsResources: ReadonlyArray<Resource> = [
     relatedLink: `https://aclanthology.org/2022.starsem-1.12/`,
   },
   {
-    title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
-    period: `言語処理学会第28回年次大会 (NLP2022)`,
-    additionalHtml: `<u>塚越駿</u>, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
-    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/D5-4.pdf`,
-  },
-  {
     title: `DefSent: Sentence Embeddings using Definition Sentences`,
     period: `ACL-IJCNLP 2021 main conference\nacceptance rate: 21.3%`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://aclanthology.org/2021.acl-short.52/`,
+  },
+];
+
+const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
+  {
+    title: `Japanese SimCSE Technical Report`,
+    period: `arXiv 2023`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://arxiv.org/abs/2310.19349`,
+  },
+  {
+    title: `論文テキストを用いた化合物探索の漸進的効率化`,
+    period: `第256回 自然言語処理研究発表会`,
+    additionalHtml: `<u>塚越駿</u>, 岩田 和樹, 花田 博幸, 笹野 遼平, 竹内 一郎, 魚住 信之, 有澤 美枝子`,
+    relatedLink: `https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=226105&item_no=1&page_id=13&block_id=8`,
+  },
+  {
+    title: `ガウス埋め込みに基づく文表現生成`,
+    period: `言語処理学会第29回年次大会 (NLP2023)`,
+    additionalHtml: `陽田翔平 (若手奨励賞), <u>塚越駿</u>, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C4-4.pdf`,
+  },
+  {
+    title: `自然言語推論と再現器を用いたSplit and Rephrase における生成文の品質向上`,
+    period: `言語処理学会第28回年次大会 (NLP2022)`,
+    additionalHtml: `<u>塚越駿</u>, 平尾努, 森下睦, 帖佐克己, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/D5-4.pdf`,
   },
   {
     title: `定義文を用いた文埋め込み構成法`,
@@ -348,8 +357,13 @@ const Component: React.FCX = function () {
       </section>
       <ResourcesSection title="Education" resources={educationResources} bold />
       <ResourcesSection
-        title="Publications"
-        resources={publicationsResources}
+        title="Refereed Publications"
+        resources={refereedPublicationsResources}
+        bold
+      />
+      <ResourcesSection
+        title="Non-Refereed Publications"
+        resources={nonRefereedPublicationsResources}
         bold
       />
       <ResourcesSection
