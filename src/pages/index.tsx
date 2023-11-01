@@ -22,6 +22,11 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
+    title: `Part-time Employee at Preferred Elements, Inc.`,
+    period: `November 2023 - present`,
+    text: `Research Engineer`,
+  },
+  {
     title: `Internship / Part-time Employee at Preferred Networks, Inc.`,
     period: `July 2023 - present`,
     text: `Research Engineer`,
