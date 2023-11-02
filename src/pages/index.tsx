@@ -143,6 +143,21 @@ const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `[解説資料] WhitenedCSE: Whitening-based Contrastive Learning of Sentence Embeddings`,
+    period: `ACL2023読み会 at 名大`,
+    relatedLink: `https://speakerdeck.com/hpprc/whitenedcse-whitening-based-contrastive-learning-of-sentence-embeddings`,
+  },
+  {
+    title: `[解説資料] Hyena Hierarchy: Towards Larger Convolutional Language Models`,
+    period: `第15回 最先端NLP勉強会`,
+    relatedLink: `https://speakerdeck.com/hpprc/hyena-hierarchy-towards-larger-convolutional-language-models`,
+  },
+  {
+    title: `[輪講資料] LoRA: Low-Rank Adaptation of Large Language Models`,
+    period: `April 2023`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-lora-low-rank-adaptation-of-large-language-models`,
+  },
+  {
     title: `BERTによるテキスト分類チュートリアル`,
     period: `May 2023`,
     relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/2/30_867/_article/-char/ja`,
