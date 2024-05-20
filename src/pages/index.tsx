@@ -23,12 +23,12 @@ const educationResources: ReadonlyArray<Resource> = [
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
     title: `Part-time Employee at Preferred Elements, Inc.`,
-    period: `November 2023 - present`,
+    period: `November 2023 - June 2024`,
     text: `Research Engineer`,
   },
   {
     title: `Internship / Part-time Employee at Preferred Networks, Inc.`,
-    period: `July 2023 - present`,
+    period: `July 2023 - June 2024`,
     text: `Research Engineer`,
   },
   {
@@ -89,9 +89,21 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 
 const refereedPublicationsResources: ReadonlyArray<Resource> = [
   {
-    title: `定義文を用いた文埋め込み構成法`,
+    title: `WikiSplit++: Easy Data Refinement for Split and Rephrase`,
+    period: `LREC-COLING 2024`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Tsutomu Hirao, Makoto Morishita, Katsuki Chousa, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://arxiv.org/abs/2404.09002`,
+  },
+  {
+    title: `Sentence Representations via Gaussian Embedding`,
+    period: `EACL 2024 (Main)`,
+    additionalHtml: `Shohei Yoda, <u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://aclanthology.org/2024.eacl-short.36/`,
+  },
+  {
+    title: `Sentence Embeddings using Definition Sentences`,
     period: `自然言語処理 Vol.30 No.1`,
-    additionalHtml: `<u>塚越駿</u>, 笹野遼平, 武田浩一`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/1/30_125/_pdf/-char/ja`,
   },
   {
@@ -142,6 +154,16 @@ const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
 ];
 
 const activitiesResources: ReadonlyArray<Resource> = [
+  {
+    title: `[輪講資料] Text Embeddings by Weakly-Supervised Contrastive Pre-training`,
+    period: `May 2024`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-text-embeddings-by-weakly-supervised-contrastive-pre-training`,
+  },
+  {
+    title: `[輪講資料] One Embedder, Any Task: Instruction-Finetuned Text Embeddings`,
+    period: `December 2023`,
+    relatedLink: `https://speakerdeck.com/hpprc/one-embedder-any-task-instruction-finetuned-text-embeddings`,
+  },
   {
     title: `[解説資料] WhitenedCSE: Whitening-based Contrastive Learning of Sentence Embeddings`,
     period: `ACL2023読み会 at 名大`,
