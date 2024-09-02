@@ -89,10 +89,16 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 
 const refereedPublicationsResources: ReadonlyArray<Resource> = [
   {
+    title: `Improving Sentence Embeddings with Automatic Generation of Training Data Using Few-shot Examples`,
+    period: `ACL 2024 SRW`,
+    additionalHtml: `Soma Sato, <u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://aclanthology.org/2024.acl-srw.43/`,
+  },
+  {
     title: `WikiSplit++: Easy Data Refinement for Split and Rephrase`,
     period: `LREC-COLING 2024`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Tsutomu Hirao, Makoto Morishita, Katsuki Chousa, Ryohei Sasano, Koichi Takeda`,
-    relatedLink: `https://arxiv.org/abs/2404.09002`,
+    relatedLink: `https://aclanthology.org/2024.lrec-main.1533/`,
   },
   {
     title: `Sentence Representations via Gaussian Embedding`,
@@ -103,6 +109,7 @@ const refereedPublicationsResources: ReadonlyArray<Resource> = [
   {
     title: `Sentence Embeddings using Definition Sentences`,
     period: `自然言語処理 Vol.30 No.1`,
+    text: `Best paper award`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
     relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/30/1/30_125/_pdf/-char/ja`,
   },
@@ -154,6 +161,16 @@ const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
 ];
 
 const activitiesResources: ReadonlyArray<Resource> = [
+  {
+    title: `Isotropy, Clusters, and Classifiers`,
+    period: `August 2024`,
+    relatedLink: `https://speakerdeck.com/hpprc/isotropy-clusters-and-classifiers`,
+  },
+  {
+    title: `[輪講資料] Matryoshka Representation Learning`,
+    period: `August 2024`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-matryoshka-representation-learning`,
+  },
   {
     title: `[輪講資料] Text Embeddings by Weakly-Supervised Contrastive Pre-training`,
     period: `May 2024`,
