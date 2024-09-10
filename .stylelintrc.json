@@ -13,12 +13,6 @@
     "stylelint-config-styled-components",
     "stylelint-config-recess-order"
   ],
-  "plugins": [
-    "stylelint-order"
-  ],
-  "ignoreFiles": [
-    "**/node_modules/**",
-    ".next/**",
-    "src/styled/tailwind.css"
-  ]
+  "plugins": ["stylelint-order"],
+  "ignoreFiles": ["**/node_modules/**", ".next/**", "src/styled/tailwind.css"]
 }
