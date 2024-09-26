@@ -129,6 +129,12 @@ const refereedPublicationsResources: ReadonlyArray<Resource> = [
 
 const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
   {
+    title: `Ruri: Japanese General Text Embeddings`,
+    period: `arXiv 2024`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano`,
+    relatedLink: `https://arxiv.org/abs/2409.07737`,
+  },
+  {
     title: `Japanese SimCSE Technical Report`,
     period: `arXiv 2023`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
@@ -161,6 +167,12 @@ const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
 ];
 
 const activitiesResources: ReadonlyArray<Resource> = [
+  {
+    title: `Development of General Text Embedding Model for Japanese`,
+    period: `September 2024`,
+    text: `Encouragement Award (23/182), Sponshor Award (PKSHA)`,
+    relatedLink: `http://cr.fvcrc.i.nagoya-u.ac.jp/~tsukagoshi/presentations/YANS2024.pdf`,
+  },
   {
     title: `Isotropy, Clusters, and Classifiers`,
     period: `August 2024`,
