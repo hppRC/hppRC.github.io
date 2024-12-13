@@ -2,88 +2,93 @@ import { ExternalLink, ResourcesSection } from "src/components";
 
 const educationResources: ReadonlyArray<Resource> = [
   {
-    title: `Doctor's degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
-    period: `April 2023 - `,
+    title: `Ph.D. Candidate, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
+    period: `April 2023 - Present`,
   },
   {
-    title: `Master's degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
+    title: `Master’s Degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
     period: `April 2021 - March 2023`,
   },
   {
-    title: `Bachelor's degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
+    title: `Bachelor’s Degree, Department of Computer Science, School of Informatics, Nagoya University, Japan`,
     period: `April 2017 - March 2021`,
     text: `GPA: 3.89/4.30`,
   },
   {
-    title: `Short-term study abroad at Monash University, Australia`,
+    title: `Short-term Study Abroad, Monash University, Australia`,
     period: `February 2019 - March 2019`,
   },
 ];
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
-    title: `Part-time Employee at Preferred Elements, Inc.`,
+    title: `SB Intuitions Corp.`,
+    period: `December 2024 - Present`,
+    text: `Research Engineer`,
+  },
+  {
+    title: `Part-time Employee, Preferred Elements, Inc.`,
     period: `November 2023 - June 2024`,
     text: `Research Engineer`,
   },
   {
-    title: `Internship / Part-time Employee at Preferred Networks, Inc.`,
+    title: `Internship/Part-time Employee, Preferred Networks, Inc.`,
     period: `July 2023 - June 2024`,
     text: `Research Engineer`,
   },
   {
-    title: `Writer for State of AI Guide`,
+    title: `Contributor, State of AI Guide`,
     period: `October 2022 - March 2023`,
     relatedLink: `https://ja.stateofaiguides.com/author/tsukagoshi/`,
   },
   {
-    title: `Research Assistant of Moonshot R&D project "Observation and interpretation AI based on prior knowledge"`,
+    title: `Research Assistant, Moonshot R&D Project "Observation and Interpretation AI Based on Prior Knowledge"`,
     period: `June 2021 - March 2024`,
     text: `ムーンショット型研究開発事業: 事前知識に基づく観察・解釈AI 研究アシスタント`,
   },
   {
-    title: `Research Internship at NTT CS Lab.`,
+    title: `Research Intern, NTT CS Lab.`,
     period: `August 2021 - September 2021`,
     text: `Natural Language Processing / Python`,
   },
   {
-    title: `Software Engineering Internship at Mercari Inc.`,
+    title: `Software Engineering Intern, Mercari Inc.`,
     period: `May 2021 - August 2021`,
     text: `Machine Learning, Search / Go, Python`,
   },
   {
-    title: `Server-side Engineering Internship at pixiv Inc.`,
+    title: `Server-side Engineering Intern, pixiv Inc.`,
     period: `April 2021 - May 2021`,
-    text: `Novel team, Search System Engineer / Python, PHP`,
+    text: `Novel Team, Search System Engineer / Python, PHP`,
   },
   {
-    title: `Server-side Engineering Internship at Recruit Co., Ltd.`,
+    title: `Server-side Engineering Intern, Recruit Co., Ltd.`,
     period: `February 2021 - March 2021`,
-    text: `Search System Engineer / ElasticSearch, AES, Locust`,
+    text: `Search System Engineer / Elasticsearch, AES, Locust`,
   },
   {
-    title: `Writer for AI-SCHOLAR`,
+    title: `Writer, AI-SCHOLAR`,
     period: `June 2020 - June 2021`,
   },
   {
-    title: `Server-side Engineering Internship at CyberAgent Inc.`,
+    title: `Server-side Engineering Intern, CyberAgent Inc.`,
     period: `March 2020`,
     text: `Scala, Akka, AWS (ECS, DynamoDB Streams)`,
   },
   {
-    title: `Server-side Engineer at Ateam Inc.`,
+    title: `Server-side Engineer, Ateam Inc.`,
     period: `January 2020 - March 2020`,
     text: `Developed in-house management system / Rails, Vue.js`,
   },
   {
-    title: `Server-side Engineering Internship at TeamLab Inc.`,
+    title: `Server-side Engineering Intern, TeamLab Inc.`,
     period: `September 2019`,
-    text: `Developed API using postal codes and geometrical information / Go, MySQL, AWS (Fargate)`,
+    text: `Developed API using postal codes and geometric information / Go, MySQL, AWS (Fargate)`,
   },
   {
-    title: `R&D Engineering Internship at TRYETING Inc.`,
+    title: `R&D Engineer Intern, TRYETING Inc.`,
     period: `April 2019 - November 2019`,
-    text: `Time series forecasting, denoising / Python, R`,
+    text: `Time Series Forecasting, Denoising / Python, R`,
   },
 ];
 
