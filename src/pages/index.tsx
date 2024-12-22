@@ -379,7 +379,7 @@ const Component: React.FCX = function () {
           </div>
           <div className="mx-auto flex flex-col justify-end space-y-2 p-2 md:pb-0">
             <div>
-              4th year Ph.D. student at Graduate School of Informatics,
+              2nd year Ph.D. student at Graduate School of Informatics,
               NagoyaUniversity, Japan.
               {` `}
               <br className="hidden md:block" />
