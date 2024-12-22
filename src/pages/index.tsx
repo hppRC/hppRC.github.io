@@ -140,6 +140,12 @@ const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
     relatedLink: `https://arxiv.org/abs/2409.07737`,
   },
   {
+    title: `自動生成した NLI データを用いた教師なし文埋め込みの改良`,
+    period: `言語処理学会第30回年次大会 (NLP2024)`,
+    additionalHtml: `佐藤蒼馬, <u>塚越駿</u>, 笹野遼平, 武田浩一`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P6-8.pdf`,
+  },
+  {
     title: `Japanese SimCSE Technical Report`,
     period: `arXiv 2023`,
     additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
