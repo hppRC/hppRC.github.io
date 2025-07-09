@@ -22,8 +22,13 @@ const educationResources: ReadonlyArray<Resource> = [
 
 const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
   {
+    title: `Kotoba Technologies Japan`,
+    period: `May 2025 - Present`,
+    text: `Full-time ML Engineer`,
+  },
+  {
     title: `SB Intuitions Corp.`,
-    period: `December 2024 - Present`,
+    period: `December 2024 - May 2025`,
     text: `Research Engineer`,
   },
   {
@@ -385,7 +390,7 @@ const Component: React.FCX = function () {
           </div>
           <div className="mx-auto flex flex-col justify-end space-y-2 p-2 md:pb-0">
             <div>
-              2nd year Ph.D. student at Graduate School of Informatics,
+              3rd year Ph.D. student at Graduate School of Informatics,
               NagoyaUniversity, Japan.
               {` `}
               <br className="hidden md:block" />
