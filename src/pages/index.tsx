@@ -2,8 +2,8 @@ import { ExternalLink, ResourcesSection } from "src/components";
 
 const educationResources: ReadonlyArray<Resource> = [
   {
-    title: `Ph.D. Candidate, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
-    period: `April 2023 - Present`,
+    title: `Ph.D. in Informatics, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
+    period: `April 2023 - March 2026`,
   },
   {
     title: `Master’s Degree, Department of Intelligent Systems, Graduate School of Informatics, Nagoya University, Japan`,
@@ -99,6 +99,32 @@ const internsihpsEmploymentsResources: ReadonlyArray<Resource> = [
 
 const refereedPublicationsResources: ReadonlyArray<Resource> = [
   {
+    title: `Ruri: Japanese General Text Embeddings`,
+    period: `自然言語処理 Vol.33 No.2`,
+    text: `Journal paper`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano`,
+    relatedLink: `https://doi.org/10.5715/jnlp.33.591`,
+  },
+  {
+    title: `Redundancy, Isotropy, and Intrinsic Dimensionality of Prompt-based Text Embeddings`,
+    period: `自然言語処理 Vol.33 No.1`,
+    text: `Journal version of the ACL 2025 Findings paper`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano`,
+    relatedLink: `https://doi.org/10.5715/jnlp.33.76`,
+  },
+  {
+    title: `FrameEOL: Semantic Frame Induction using Causal Language Models`,
+    period: `EMNLP 2025 Findings`,
+    additionalHtml: `Chihiro Yano, Kosuke Yamada, <u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
+    relatedLink: `https://aclanthology.org/2025.findings-emnlp.623/`,
+  },
+  {
+    title: `Redundancy, Isotropy, and Intrinsic Dimensionality of Prompt-based Text Embeddings`,
+    period: `ACL 2025 Findings`,
+    additionalHtml: `<u>Hayato Tsukagoshi</u>, Ryohei Sasano`,
+    relatedLink: `https://aclanthology.org/2025.findings-acl.1330/`,
+  },
+  {
     title: `Improving Sentence Embeddings with Automatic Generation of Training Data Using Few-shot Examples`,
     period: `ACL 2024 SRW`,
     additionalHtml: `Soma Sato, <u>Hayato Tsukagoshi</u>, Ryohei Sasano, Koichi Takeda`,
@@ -138,6 +164,38 @@ const refereedPublicationsResources: ReadonlyArray<Resource> = [
 ];
 
 const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
+  {
+    title: `When Is 0.1% Enough? Analyzing the Combined Effects of Dimensionality Reduction and Quantization on Text Embedding Compression`,
+    period: `arXiv 2026`,
+    additionalHtml: `Riku Kisako, <u>Hayato Tsukagoshi</u>, Ryohei Sasano`,
+    relatedLink: `https://arxiv.org/abs/2606.01074`,
+  },
+  {
+    title: `Ruri: 日本語に特化した汎用テキスト埋め込みモデル`,
+    period: `言語処理学会第31回年次大会 (NLP2025)`,
+    text: `若手奨励賞 (Young Researcher Encouragement Award)`,
+    additionalHtml: `<u>塚越駿</u>, 笹野遼平`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q4-3.pdf`,
+  },
+  {
+    title: `プロンプトに基づくテキスト埋め込みのタスクによる冗長性の違い`,
+    period: `言語処理学会第31回年次大会 (NLP2025)`,
+    additionalHtml: `<u>塚越駿</u>, 笹野遼平`,
+    relatedLink: `https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/A5-4.pdf`,
+  },
+  {
+    title: `実在しないエンティティや出来事に関する合成文書を用いたRAGベンチマークの構築`,
+    period: `第263回 自然言語処理研究発表会`,
+    text: `優秀研究賞 (Outstanding Research Award)`,
+    additionalHtml: `李聖哲, 大萩雅也, <u>塚越駿</u>, 福地成彦, 柴田知秀, 河原大輔`,
+    relatedLink: `https://www.ipsj.or.jp/kenkyukai/event/nl263.html`,
+  },
+  {
+    title: `培地改良論文の特定と組成情報の抽出`,
+    period: `第263回 自然言語処理研究発表会`,
+    additionalHtml: `陽田翔平, <u>塚越駿</u>, 笹野遼平, 鵜飼優子, 佐藤良勝`,
+    relatedLink: `https://www.ipsj.or.jp/kenkyukai/event/nl263.html`,
+  },
   {
     title: `Ruri: Japanese General Text Embeddings`,
     period: `arXiv 2024`,
@@ -184,9 +242,48 @@ const nonRefereedPublicationsResources: ReadonlyArray<Resource> = [
 
 const activitiesResources: ReadonlyArray<Resource> = [
   {
+    title: `[輪講資料] Moshi: a speech-text foundation model for real-time dialogue`,
+    period: `July 2025`,
+    relatedLink: `https://speakerdeck.com/hpprc/lun-jiang-zi-liao-moshi-a-speech-text-foundation-model-for-real-time-dialogue`,
+  },
+  {
+    title: `【2025年版】Overleafで日本語を簡単に書くには`,
+    period: `March 2025`,
+    relatedLink: `https://zenn.dev/hpp/articles/d217c3cc740687`,
+    text: `Blog post on writing Japanese papers with Overleaf.`,
+  },
+  {
+    title: `[解説記事] Ruri: 日本語に特化した汎用テキスト埋め込みモデル`,
+    period: `December 2024`,
+    relatedLink: `https://zenn.dev/hpp/articles/b5132c64c40d24`,
+    text: `Blog post introducing the Ruri Japanese text embedding models.`,
+  },
+  {
+    title: `「定義文を用いた文埋め込み構成法」の研究経緯`,
+    period: `自然言語処理 Vol.31 No.2`,
+    relatedLink: `https://www.jstage.jst.go.jp/article/jnlp/31/2/31_742/_article/-char/ja`,
+    text: `Invited commentary on the research history behind DefSent.`,
+  },
+  {
+    title: `[2024年版] BERT Classification Tutorial (BERTによるテキスト分類)`,
+    period: `2024`,
+    relatedLink: `https://github.com/hppRC/bert-classification-tutorial-2024`,
+    text: `Updated reference implementation of text classification using BERT.`,
+  },
+  {
+    title: `[輪講資料] NLP2024 招待論文セッション: 定義文を用いた文埋め込み構成法`,
+    period: `September 2024`,
+    relatedLink: `https://speakerdeck.com/hpprc/nlp2024-zhao-dai-lun-wen-setusiyon-ding-yi-wen-woyong-itawen-mai-meip-migou-cheng-fa`,
+  },
+  {
+    title: `[ACL2024読み会] Word Embeddings Are Steers for Language Models`,
+    period: `September 2024`,
+    relatedLink: `https://speakerdeck.com/hpprc/word-embeddings-are-steers-for-language-models`,
+  },
+  {
     title: `Development of General Text Embedding Model for Japanese`,
     period: `September 2024`,
-    text: `Encouragement Award (23/182), Sponshor Award (PKSHA)`,
+    text: `Encouragement Award (23/182), Sponsor Award (PKSHA)`,
     relatedLink: `http://cr.fvcrc.i.nagoya-u.ac.jp/~tsukagoshi/presentations/YANS2024.pdf`,
   },
   {
@@ -327,14 +424,28 @@ const activitiesResources: ReadonlyArray<Resource> = [
 
 const awardsHonorsResources: ReadonlyArray<Resource> = [
   {
+    title: `第19回YANSシンポジウム (YANS2025) 奨励賞 / PKSHA社賞`,
+    period: `September 2025`,
+  },
+  {
+    title: `第263回 自然言語処理研究発表会 優秀研究賞 (Outstanding Research Award)`,
+    period: `March 2025`,
+    text: `実在しないエンティティや出来事に関する合成文書を用いたRAGベンチマークの構築`,
+  },
+  {
+    title: `言語処理学会第31回年次大会 (NLP2025) 若手奨励賞 (Young Researcher Encouragement Award)`,
+    period: `March 2025`,
+    text: `Ruri: 日本語に特化した汎用テキスト埋め込みモデル`,
+  },
+  {
     title: `Japan Society for Promotion of Science (JSPS) Research Fellowship for Young Scientists (DC1)`,
-    period: `April 2023 - March 2027`,
-    text: `200,000 yen / month + 1,000,000 yen / year`,
+    period: `April 2023 - March 2025`,
+    text: `200,000 yen / month + 1,000,000 yen / year (declined partway)`,
   },
   {
     title: `Nagoya University Interdisciplinary Frontier Fellowship`,
-    period: `April 2023 - March 2026`,
-    text: `180,000 yen / month + 250,000 yen / year`,
+    period: `April 2023`,
+    text: `Awarded; declined in favor of JSPS DC1`,
   },
   {
     title: `名古屋大学大学院 情報学研究科 修士研究中間発表 優秀賞`,
@@ -390,16 +501,22 @@ const Component: React.FCX = function () {
           </div>
           <div className="mx-auto flex flex-col justify-end space-y-2 p-2 md:pb-0">
             <div>
-              3rd year Ph.D. student at Graduate School of Informatics,
-              NagoyaUniversity, Japan.
+              ML Engineer at Kotoba Technologies Japan, working on speech models
+              and text embeddings.
               {` `}
               <br className="hidden md:block" />
+              Ph.D. in Informatics from Nagoya University (
               <ExternalLink
                 href="http://cr.fvcrc.i.nagoya-u.ac.jp/"
                 className="inline-block"
               >
                 Takeda-Sasano Lab.
               </ExternalLink>
+              ).
+              {` `}
+              <br className="hidden md:block" />
+              My research interests are in natural language processing and
+              representation learning, especially text embeddings.
             </div>
             <div>
               <p>Main: tsukagoshi.hayato[at]gmail.com</p>
@@ -434,6 +551,12 @@ const Component: React.FCX = function () {
               className="inline-block text-base"
             >
               Semantic Scholar
+            </ExternalLink>
+            <ExternalLink
+              href="https://huggingface.co/hpprc"
+              className="inline-block text-base"
+            >
+              Hugging Face
             </ExternalLink>
           </div>
         </div>

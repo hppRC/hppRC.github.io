@@ -11,7 +11,7 @@ class CustomDocument extends Document implements CustomDocumentInterface {
 
   title = `Hayato Tsukagoshi (塚越駿) Profile Page`;
 
-  description = `The proflie pages of Hayato Tsukagoshi. Please contact me if you have any questions.`;
+  description = `Hayato Tsukagoshi (塚越駿) — ML Engineer at Kotoba Technologies Japan and Ph.D. in Informatics (Nagoya University). NLP researcher working on text embeddings and representation learning. Publications, talks, and projects.`;
 
   render(): JSX.Element {
     return (

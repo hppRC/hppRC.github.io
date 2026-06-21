@@ -6,7 +6,7 @@ export const Footer: React.FC = function () {
     <footer className="pointer-events-auto mt-16 flex w-full items-center justify-center border-t p-4 text-center md:text-sm">
       <div className="text-xs">
         <div className="flex items-center justify-center">
-          Copyright©2022.
+          Copyright©2022–2026.
           <ExternalLink
             href="https://github.com/hppRC"
             className="inline-block pl-1"

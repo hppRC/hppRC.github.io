@@ -2,6 +2,7 @@ import { ExternalLink } from "src/components";
 
 const sorcialLinks = {
   GitHub: { name: `hppRC`, href: `https://github.com/hppRC` },
+  "Hugging Face": { name: `hpprc`, href: `https://huggingface.co/hpprc` },
   LinkedIn: {
     name: `Hayato Tsukagoshi`,
     href: `https://www.linkedin.com/in/hpprc/`,
@@ -37,6 +38,41 @@ type MiscellaneousData = { title: string; name?: string; href: string };
 const miscellaneousness: {
   [key: string]: { [key: string]: MiscellaneousData[] };
 } = {
+  "Models / OSS": {
+    "Ruri: Japanese General Text Embeddings": [
+      {
+        title: `Hugging Face`,
+        name: `cl-nagoya/ruri-v3-310m`,
+        href: `https://huggingface.co/cl-nagoya/ruri-v3-310m`,
+      },
+    ],
+    "ModernBERT-Ja": [
+      {
+        title: `Hugging Face`,
+        name: `sbintuitions/modernbert-ja-310m`,
+        href: `https://huggingface.co/sbintuitions/modernbert-ja-310m`,
+      },
+    ],
+    "Japanese SimCSE": [
+      {
+        title: `GitHub Repository`,
+        name: `simple-simcse-ja`,
+        href: `https://github.com/hppRC/simple-simcse-ja`,
+      },
+    ],
+    "BERT Classification Tutorial": [
+      {
+        title: `GitHub Repository (2024)`,
+        name: `bert-classification-tutorial-2024`,
+        href: `https://github.com/hppRC/bert-classification-tutorial-2024`,
+      },
+      {
+        title: `GitHub Repository (2023)`,
+        name: `bert-classification-tutorial`,
+        href: `https://github.com/hppRC/bert-classification-tutorial`,
+      },
+    ],
+  },
   Software: {
     // 'Portfolio site': [{ title: `hpp portfolio`, href: `https://hpprc.com` }],
     // 'Generative React': [{ title: `Generative React`, href: `https://generative-react.hpprc.com` }],
